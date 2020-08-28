@@ -1,0 +1,85 @@
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  height: 100%;
+}
+.flexArea {
+  height: 100%;
+  overflow-x: hidden;
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+
+button {
+  outline: none;
+}
+
+.sidenav {
+  background-color: #212d3b;
+  color: white;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.sidenav .logo {
+  text-align: center;
+}
+.sidenav button {
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  text-align: left;
+  background-color: #212d3b;
+  color: white;
+  outline: none;
+}
+.sidenav a {
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    transition: 0.3s;
+  }
+.sidenav h5 {
+  margin-left: 15px;
+  margin-bottom: 5px;
+}
+
+.sidenav-active-set a {
+  background-color: #151d29 !important;
+  border-left: 2px #f1f1f1 solid;
+}
+.sidenav-active-link {
+  background-color: #0c1118 !important;
+}
+
+
+
+.sidenav button:hover {
+  color: #f1f1f1;
+  background-color: #151d29;
+}
+
+.dropdown-container {
+  display: none;
+}
+
+.navbar {
+  height: 50px;
+  flex: 0 0 88%;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+}
+.navbar ul {
+  list-style: none;
+}
+
+.content-area {
+  flex: 0 0 85%;
+}
