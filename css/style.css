@@ -9,7 +9,6 @@ body {
   height: 100%;
   overflow-x: hidden;
   transition: margin-left 0.5s;
-  padding: 16px;
 }
 
 button {
@@ -27,6 +26,7 @@ button {
   left: 0;
   overflow-x: hidden;
   transition: 0.5s;
+
 }
 
 .sidenav .logo {
@@ -60,26 +60,66 @@ button {
   background-color: #0c1118 !important;
 }
 
-
-
 .sidenav button:hover {
   color: #f1f1f1;
   background-color: #151d29;
 }
 
+.sidenav i {
+    padding: 0 5px;
+}
+
 .dropdown-container {
   display: none;
+  transition: 0.4s;
+}
+.dropdown-btn {
+    transition: 0.4s;
 }
 
 .navbar {
-  height: 50px;
-  flex: 0 0 88%;
+  height: 65px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+  margin: auto;
+    /* position: relative; */
+    /* top: -15px; */
+
 }
 .navbar ul {
+    /* display: block; */
+    margin: auto;
   list-style: none;
+  /* float: left; */
+  /* align-content: center; */
+  /* margin-top: 20px; */
+  padding: auto 0;
+  color: #333;
 }
 
+.navbar ul > a > li {
+    padding-top: 20px;
+}
+.closebtn {
+    float: right;
+    padding-right: 15px;
+    padding-top: 10px;
+    color: white;
+}
+.openbtn {
+    color: #333;
+}
+
+.right-float {
+    /* display: inline-flex; */
+    float: right;
+    margin-right: 2%;
+    padding-top: 0 !important;
+    margin-top: -14px !important;
+    color: #333;
+}
+.right-float ul {
+    height: 100%;
+}
 .content-area {
-  flex: 0 0 85%;
+
 }

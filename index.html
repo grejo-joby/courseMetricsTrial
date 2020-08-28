@@ -12,52 +12,56 @@
 
 <body>
     <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn"><i class="fa fa-times" onclick="closeNav()"></i></a>
         <h3 class="logo">CourseMatrics</h3>
         <h5>Navigation</h5>
-        <button class="dropdown-btn sidenav-active-link">Dashboard</button>
+        <button class="dropdown-btn sidenav-active-link"><span><i class="fa fa-tachometer"></i> Dashboard</span><span><i class="fa fa-angle-down fa-lg" style="float: right;"></i></span> </button>
         <div class="dropdown-container sidenav-active-set">
-            <a href=""><button>Default</button></a>
-            <a href=""><button>CRM</button></a>
-            <a href=""><button>Analytics</button></a>
+            <a href=""><button><i class="fa fa-angle-right"></i> Default</button></a>
+            <a href=""><button><i class="fa fa-angle-right"></i> CRM</button></a>
+            <a href=""><button><i class="fa fa-angle-right"></i> Analytics</button></a>
         </div>
-        <button class="">Page Layouts</button>
-        <button class="">Navigation</button>
-        <button class="">Widget</button>
+        <button class=""><i class="fa fa-file"></i> Page Layouts</button>
+        <button class=""><i class="fa fa-location-arrow"></i> Navigation</button>
+        <button class=""><i class="fa fa-rocket"></i> Widget</button>
         <h5>UI Widgets</h5>
-        <button class="dropdown-btn">Basic</button>
+        <button class="dropdown-btn"><i class="fa fa-cube"></i>Basic<i class="fa fa-angle-down fa-lg" style="float: right;"></i></button>
         <div class="dropdown-container">
-            <a href=""><button>Square</button></a>
-            <a href=""><button>Rectangle</button></a>
-            <a href=""><button>Circle</button></a>
+            <a href=""><button><i class="fa fa-angle-right"></i>Square</button></a>
+            <a href=""><button><i class="fa fa-angle-right"></i>Rectangle</button></a>
+            <a href=""><button><i class="fa fa-angle-right"></i>Circle</button></a>
         </div>
-        <button class="dropdown-btn">Advanced</button>
+        <button class="dropdown-btn"><i class="fa fa-paint-brush"></i>Advanced<i class="fa fa-angle-down fa-lg" style="float: right;"></i></button>
         <div class="dropdown-container">
-            <a href=""><button>Square</button></a>
-            <a href=""><button>Rectangle</button></a>
-            <a href=""><button>Circle</button></a>
+            <a href=""><button><i class="fa fa-angle-right"></i>Square</button></a>
+            <a href=""><button><i class="fa fa-angle-right"></i>Rectangle</button></a>
+            <a href=""><button><i class="fa fa-angle-right"></i>Circle</button></a>
         </div>
-        <button class="dropdown-btn">Extra</button>
+        <button class="dropdown-btn"><i class="fa fa-puzzle-piece"></i>Extra<i class="fa fa-angle-down fa-lg" style="float: right;"></i></button>
         <div class="dropdown-container">
-            <a href=""><button>Square</button></a>
-            <a href=""><button>Rectangle</button></a>
-            <a href=""><button>Circle</button></a>
+            <a href=""><button><i class="fa fa-angle-right"></i>Square</button></a>
+            <a href=""><button><i class="fa fa-angle-right"></i>Rectangle</button></a>
+            <a href=""><button><i class="fa fa-angle-right"></i>Circle</button></a>
         </div>
-        <button class="dropdown-btn">Animations</button>
+        <button class="dropdown-btn"><i class="fa fa-video-camera"></i>Animations<i class="fa fa-angle-down fa-lg" style="float: right;"></i></button>
         <div class="dropdown-container">
-            <a href=""><button>Square</button></a>
-            <a href=""><button>Rectangle</button></a>
-            <a href=""><button>Circle</button></a>
+            <a href=""><button><i class="fa fa-angle-right"></i>Square</button></a>
+            <a href=""><button><i class="fa fa-angle-right"></i>Rectangle</button></a>
+            <a href=""><button><i class="fa fa-angle-right"></i>Circle</button></a>
         </div>
     </div>
     <div class="flexArea" id="flexArea">
-    
         <div class="navbar">
             <ul>
-                <a href="javascript:void(0)" class="closebtn"><li><i class="fa fa-search" onclick="closeNav()"></i></li></a>
+                <a href="javascript:void(0)" class="openbtn">
+                    <li><i class="fa fa-bars fa-lg" onclick="openNav()"></i></li>
+                </a>
+                <a href=""><li class="right-float"><span><i class="fa fa-user fa-lg"></i></span> User Name</li></a>
+                <a href=""><li class="right-float"><i class="fa fa-bell fa-lg"></i></li></a>
+                <a href=""><li class="right-float"><i class="fa fa-comment-o fa-lg"></i></li></a>
             </ul>
-            <ul>
-                <a href="javascript:void(0)" class=""><li><i class="fa fa-search" onclick="openNav()"></i></li></a>
-            </ul>
+
+
         </div>
         <div class="content-area">
 
