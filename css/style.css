@@ -4,6 +4,7 @@ html {
 body {
   margin: 0;
   height: 100%;
+  font-family: 'Montserrat', sans-serif;
 }
 .flexArea {
   height: 100%;
@@ -40,19 +41,21 @@ button {
   background-color: #212d3b;
   color: white;
   outline: none;
+  font-family: 'Montserrat', sans-serif;
 }
 .sidenav a {
     text-decoration: none;
     font-size: 25px;
     display: block;
-    transition: 0.3s;
+    transition: 0.4s;
+    font-family: 'Montserrat', sans-serif;
   }
 .sidenav h5 {
   margin-left: 15px;
   margin-bottom: 5px;
 }
 
-.sidenav-active-set a {
+.sidenav-active-set {
   background-color: #151d29 !important;
   border-left: 2px #f1f1f1 solid;
 }
@@ -72,7 +75,17 @@ button {
 .dropdown-container {
   display: none;
   transition: 0.4s;
+  background-color: #151d29 !important;
+
+  
 }
+.dropdown-container button {
+    background-color: #151d29 !important;
+}
+.dropdown-container a {
+    margin-left: 15px;
+}
+
 .dropdown-btn {
     transition: 0.4s;
 }
@@ -120,6 +133,97 @@ button {
 .right-float ul {
     height: 100%;
 }
-.content-area {
 
+.flexContainer {
+  display: flex;
+}
+.verticalFlex {
+  display: flex;
+  flex-direction: column;
+  
+}
+.verticalFlexItem {
+  flex: 0 0 10% !important;
+  margin: 2% 0;
+  
+}
+.flex-card {
+  flex: 0 0 16.8%;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+  margin: 1%;
+  padding-left: 20px;
+  border-radius: 10px;
+  /* text-align: center; */
+}
+.card {
+  border-radius: 10px;
+  padding-left: 20px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+}
+
+.flex-30 {
+  flex: 0 0 30%;
+  margin: 1%;
+}
+.flex-70 {
+  flex: 0 0 70%;
+  margin: 1%;
+}
+.flex-60 {
+  flex: 0 0 60%;
+  margin: 1%;
+}
+
+.flex-50 {
+  flex: 0 0 50%;
+  margin: 1%;
+}
+.flex-40 {
+  flex: 0 0 40%;
+  margin: 1%;
+}
+#homeIcon {
+  background-color: slateblue;
+  color: white;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  margin-right: 2%;
+  padding: 1%;
+}
+
+.dashboardLine {
+  margin: 1%;
+  align-content: center;
+}
+
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 0.9vw;
+}
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  color: black;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+.flex-30-end {
+  flex: 0 0 65%;
+  justify-content: center;
+  align-content: flex-end;
+}
+
+
+.chartCard {
+  
 }
