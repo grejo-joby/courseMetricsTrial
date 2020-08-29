@@ -136,6 +136,8 @@ button {
 
 .flexContainer {
   display: flex;
+  justify-content: center;
+  align-content: center;
 }
 .verticalFlex {
   display: flex;
@@ -144,8 +146,10 @@ button {
 }
 .verticalFlexItem {
   flex: 0 0 10% !important;
-  margin: 2% 0;
-  
+}
+
+.verticalFlexItem h1,h2,h3,h4,h5,h6 {
+  margin: 2%;
 }
 .flex-card {
   flex: 0 0 16.8%;
@@ -226,4 +230,10 @@ ul.breadcrumb li a:hover {
 
 .chartCard {
   
+}
+
+
+.responsive {
+  width: 100%;
+  height: auto;
 }
