@@ -282,3 +282,8 @@ ul.breadcrumb li a:hover {
   border-radius: 10px;
 }
 
+.cardTableDiv {
+  position: relative;
+  bottom: 0;
+  
+}
