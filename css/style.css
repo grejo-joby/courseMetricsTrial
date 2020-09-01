@@ -4,11 +4,7 @@ html {
 body {
   margin: 0;
   height: 100%;
-<<<<<<< HEAD
   font-family: 'Quicksand', sans-serif;
-=======
-  font-family: "Montserrat", sans-serif;
->>>>>>> 2667f7bd98b60ed7cf15a460bfeefafe70530c80
 }
 .flexArea {
   height: 100%;
@@ -21,8 +17,8 @@ button {
 }
 
 .sidenav {
-  background-color: #212d3b;
-  color: white;
+  background-color: #263544;
+  color: #f0f3f8;
   height: 100%;
   width: 0;
   position: fixed;
@@ -43,16 +39,16 @@ button {
   border: 0;
   text-align: left;
   background-color: #212d3b;
-  color: white;
+  color: #f0f3f8;
   outline: none;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 .sidenav a {
   text-decoration: none;
   font-size: 25px;
   display: block;
   transition: 0.4s;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 .sidenav h5 {
   margin-left: 15px;
@@ -61,10 +57,10 @@ button {
 
 .sidenav-active-set {
   background-color: #151d29 !important;
-  border-left: 2px #f1f1f1 solid;
+  border-left: 2px #f0f3f8 solid;
 }
 .sidenav-active-link {
-  background-color: #0c1118 !important;
+  background-color: #1D2531 !important;
 }
 
 .sidenav button:hover {
@@ -107,7 +103,7 @@ button {
   /* align-content: center; */
   /* margin-top: 20px; */
   padding: auto 0;
-  color: #333;
+  color: #20190f;
 }
 
 .navbar ul > a > li {
@@ -137,9 +133,12 @@ button {
 
 .flexContainer {
   display: flex;
-
   justify-content: center;
   align-content: center;
+}
+#dashboardLineContainer {
+  justify-content: flex-start;
+  margin-left: 2%;
 }
 .verticalFlex {
   display: flex;
@@ -170,6 +169,11 @@ h6 {
   padding-left: 20px;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
 }
+.card4Table {
+  border-radius: 10px;
+  /* padding-left: 20px; */
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+}
 
 .flex-30 {
   flex: 0 0 30%;
@@ -193,7 +197,7 @@ h6 {
   margin: 1%;
 }
 #homeIcon {
-  background-color: slateblue;
+  background-color: #449ff5;
   color: white;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
   border-radius: 15px;
@@ -204,6 +208,8 @@ h6 {
 .dashboardLine {
   margin: 1%;
   align-content: center;
+  justify-content: left;
+  justify-self: flex-start;
 }
 
 ul.breadcrumb {
@@ -232,13 +238,12 @@ ul.breadcrumb li a:hover {
   justify-content: center;
   align-content: flex-end;
 }
-
-<<<<<<< HEAD
-=======
-.chartCard {
+.flex-40-end {
+  flex: 0 0 50%;
+  justify-content: center;
+  align-content: flex-end;
 }
 
->>>>>>> 2667f7bd98b60ed7cf15a460bfeefafe70530c80
 .responsive {
   width: 100%;
   height: auto;
@@ -257,3 +262,23 @@ ul.breadcrumb li a:hover {
     font-size: 1rem;
   }
 }
+
+.cardTable {
+  padding-top: 2%;
+  width: 100%;
+  table-layout: auto;
+  padding-left: 20px;
+}
+.tableFees {
+
+  width:20%;
+  text-align: center;
+  margin-right: 2%;
+}
+
+.tableFees span {
+  background-color: #ccc;
+  padding: 5%;
+  border-radius: 10px;
+}
+
