@@ -4,7 +4,7 @@ html {
 body {
   margin: 0;
   height: 100%;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 .flexArea {
   height: 100%;
@@ -60,7 +60,7 @@ button {
   border-left: 2px #f0f3f8 solid;
 }
 .sidenav-active-link {
-  background-color: #1D2531 !important;
+  background-color: #1d2531 !important;
 }
 
 .sidenav button:hover {
@@ -138,6 +138,7 @@ button {
 
 .flexContainer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-content: center;
 }
@@ -253,6 +254,66 @@ ul.breadcrumb li a:hover {
   width: 100%;
   height: auto;
 }
+
+.tableFees {
+  text-align: center;
+  /* margin-right: 2%; */
+}
+
+.tableFees {
+  background-color: #ccc;
+  padding: 2%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.cardRow1 {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 2%;
+  /* flex-wrap: wrap; */
+}
+.cardRow2 {
+  grid-area: main;
+  padding-left: 3%;
+}
+
+.cardRow3 {
+  grid-area: footer;
+  background-color: #eee;
+  display: flex;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.card-grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "main main main "
+    "footer footer footer";
+  grid-gap: 10px;
+  min-width: 200px;
+  /* padding: 10px; */
+}
+
+.profileLetter {
+  padding: 10px;
+  /* background-color: #4099ff; */
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
 @media only screen and (max-width: 600px) {
   .flexContainer {
     padding-left: 1rem;
@@ -266,56 +327,16 @@ ul.breadcrumb li a:hover {
   ul.breadcrumb li {
     font-size: 1rem;
   }
-}
 
-.tableFees {
-  text-align: right;
-  /* margin-right: 2%; */
-}
+  .card-grid-container {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "main main main "
+      "footer footer footer";
+    margin: 0.5rem 0rem 0.5rem 0rem;
+    min-width: 100%;
 
-.tableFees span {
-  background-color: #ccc;
-  padding: 5%;
-  border-radius: 10px;
-}
-
-.cardRow1 { 
-  grid-area: header; 
-  display: flex;
-  margin-left: 20px;
-  margin-top: 2%;
-  /* flex-wrap: wrap; */
-}
-.cardRow2 { 
-  grid-area: main; 
-  padding-left: 3%;
-}
-
-.cardRow3 { 
-  grid-area: footer; 
-  background-color: #eee;
-  display: flex;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
-.card-grid-container {
-  display: grid;
-  grid-template-areas:
-    'header header header'
-    'main main main '
-    'footer footer footer';
-   grid-gap: 10px;
-  /* padding: 10px; */
-}
-
-.profileLetter {
-  padding: 10px;
-  /* background-color: #4099ff; */
-  border-radius: 50%;
-  text-align: center;
-  color: #fff;
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
+    /* padding: 10px; */
+  }
 }
