@@ -290,6 +290,7 @@ ul.breadcrumb li a:hover {
 }
 .cardRow2 { 
   grid-area: main; 
+  padding-left: 3%;
 }
 
 .cardRow3 { 
