@@ -1,0 +1,284 @@
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  height: 100%;
+  font-family: 'Quicksand', sans-serif;
+}
+.flexArea {
+  height: 100%;
+  overflow-x: hidden;
+  transition: margin-left 0.5s;
+}
+
+button {
+  outline: none;
+}
+
+.sidenav {
+  background-color: #263544;
+  color: #f0f3f8;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.sidenav .logo {
+  text-align: center;
+  padding: 15%;
+}
+.sidenav button {
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  text-align: left;
+  background-color: #212d3b;
+  color: #f0f3f8;
+  outline: none;
+  font-family: "Quicksand", sans-serif;
+}
+.sidenav a {
+  text-decoration: none;
+  font-size: 25px;
+  display: block;
+  transition: 0.4s;
+  font-family: "Quicksand", sans-serif;
+}
+.sidenav h5 {
+  margin-left: 15px;
+  margin-bottom: 5px;
+}
+
+.sidenav-active-set {
+  background-color: #151d29 !important;
+  border-left: 2px #f0f3f8 solid;
+}
+.sidenav-active-link {
+  background-color: #1D2531 !important;
+}
+
+.sidenav button:hover {
+  color: #f1f1f1;
+  background-color: #151d29;
+}
+
+.sidenav i {
+  padding: 0 5px;
+}
+
+.dropdown-container {
+  display: none;
+  transition: 0.4s;
+  background-color: #151d29 !important;
+}
+.dropdown-container button {
+  background-color: #151d29 !important;
+}
+.dropdown-container a {
+  margin-left: 15px;
+}
+
+.dropdown-btn {
+  transition: 0.4s;
+}
+
+.navbar {
+  height: 65px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+  margin: auto;
+  /* position: relative; */
+  /* top: -15px; */
+}
+.navbar ul {
+  /* display: block; */
+  margin: auto;
+  list-style: none;
+  /* float: left; */
+  /* align-content: center; */
+  /* margin-top: 20px; */
+  padding: auto 0;
+  color: #20190f;
+}
+
+.navbar ul > a > li {
+  padding-top: 20px;
+}
+.closebtn {
+  float: right;
+  padding-right: 15px;
+  padding-top: 10px;
+  color: white;
+}
+.openbtn {
+  color: #333;
+}
+
+.right-float {
+  /* display: inline-flex; */
+  float: right;
+  margin-right: 2%;
+  padding-top: 0 !important;
+  margin-top: -14px !important;
+  color: #333;
+}
+.right-float ul {
+  height: 100%;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+#dashboardLineContainer {
+  justify-content: flex-start;
+  margin-left: 2%;
+}
+.verticalFlex {
+  display: flex;
+  flex-direction: column;
+}
+.verticalFlexItem {
+  flex: 0 0 10% !important;
+}
+
+.verticalFlexItem h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 2%;
+}
+.flex-card {
+  flex: 0 0 16.8%;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+  margin: 1%;
+  padding-left: 20px;
+  border-radius: 10px;
+  /* text-align: center; */
+}
+.card {
+  border-radius: 10px;
+  padding-left: 20px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+}
+.card4Table {
+  border-radius: 10px;
+  /* padding-left: 20px; */
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+}
+
+.flex-30 {
+  flex: 0 0 30%;
+  margin: 1%;
+}
+.flex-70 {
+  flex: 0 0 70%;
+  margin: 1%;
+}
+.flex-60 {
+  flex: 0 0 60%;
+  margin: 1%;
+}
+
+.flex-50 {
+  flex: 0 0 50%;
+  margin: 1%;
+}
+.flex-40 {
+  flex: 0 0 40%;
+  margin: 1%;
+}
+#homeIcon {
+  background-color: #449ff5;
+  color: white;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  margin-right: 2%;
+  padding: 1%;
+}
+
+.dashboardLine {
+  margin: 1%;
+  align-content: center;
+  justify-content: left;
+  justify-self: flex-start;
+}
+
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 0.9vw;
+}
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  color: black;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+.flex-30-end {
+  flex: 0 0 65%;
+  justify-content: center;
+  align-content: flex-end;
+}
+.flex-40-end {
+  flex: 0 0 50%;
+  justify-content: center;
+  align-content: flex-end;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+@media only screen and (max-width: 600px) {
+  .flexContainer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    flex-direction: column;
+  }
+  ul.breadcrumb {
+    padding: 1rem 1rem;
+    list-style: none;
+  }
+  ul.breadcrumb li {
+    font-size: 1rem;
+  }
+}
+
+.cardTable {
+  padding-top: 2%;
+  width: 100%;
+  table-layout: auto;
+  padding-left: 20px;
+}
+.tableFees {
+
+  width:20%;
+  text-align: center;
+  margin-right: 2%;
+}
+
+.tableFees span {
+  background-color: #ccc;
+  padding: 5%;
+  border-radius: 10px;
+}
+
