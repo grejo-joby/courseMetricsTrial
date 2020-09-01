@@ -282,8 +282,41 @@ ul.breadcrumb li a:hover {
   border-radius: 10px;
 }
 
-.cardTableDiv {
-  position: relative;
-  bottom: 0;
-  
+.cardRow1 { 
+  grid-area: header; 
+  display: flex;
+  margin-left: 20px;
+  margin-top: 2%;
+}
+.cardRow2 { 
+  grid-area: main; 
+}
+
+.cardRow3 { 
+  grid-area: footer; 
+  background-color: #eee;
+  display: flex;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.card-grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header'
+    'main main main '
+    'footer footer footer';
+   grid-gap: 10px;
+  padding: 10px;
+}
+
+.profileLetter {
+  padding: 10px;
+  /* background-color: #4099ff; */
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
 }
