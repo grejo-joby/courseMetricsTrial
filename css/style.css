@@ -38,7 +38,7 @@ button {
   padding: 10px;
   border: 0;
   text-align: left;
-  background-color: #212d3b;
+  background-color: #263544;
   color: #f0f3f8;
   outline: none;
   font-family: "Quicksand", sans-serif;
@@ -75,11 +75,16 @@ button {
 .dropdown-container {
   display: none;
   transition: 0.4s;
-  background-color: #151d29 !important;
+  background-color: #162534 !important;
 }
 .dropdown-container button {
-  background-color: #151d29 !important;
+  background-color: #162534 !important;
 }
+.dropdown-container button:hover {
+  background-color: #151d29 !important;
+  transition: 0.4s;
+}
+
 .dropdown-container a {
   margin-left: 15px;
 }
@@ -218,7 +223,7 @@ ul.breadcrumb {
 }
 ul.breadcrumb li {
   display: inline;
-  font-size: 0.9vw;
+  font-size: 1.2vw;
 }
 ul.breadcrumb li + li:before {
   padding: 8px;
@@ -263,17 +268,9 @@ ul.breadcrumb li a:hover {
   }
 }
 
-.cardTable {
-  padding-top: 2%;
-  width: 100%;
-  table-layout: auto;
-  padding-left: 20px;
-}
 .tableFees {
-
-  width:20%;
-  text-align: center;
-  margin-right: 2%;
+  text-align: right;
+  /* margin-right: 2%; */
 }
 
 .tableFees span {
@@ -287,6 +284,7 @@ ul.breadcrumb li a:hover {
   display: flex;
   margin-left: 20px;
   margin-top: 2%;
+  /* flex-wrap: wrap; */
 }
 .cardRow2 { 
   grid-area: main; 
