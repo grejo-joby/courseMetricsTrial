@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CourseMetrics - Student</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn"><i class="fa fa-times" onclick="closeNav()"></i></a>
+        <h3 class="logo">CourseMatrics</h3>
+        <h5>Navigation</h5>
+        <!-- <button class="dropdown-btn"><span><i class="fa fa-tachometer"></i> Home</span><span><i
+                    class="fa fa-angle-down fa-lg" style="float: right;"></i></span> </button>
+        <div class="dropdown-container sidenav-active-set">
+            <a href=""><button><i class="fa fa-angle-right"></i> Default</button></a>
+            <a href=""><button><i class="fa fa-angle-right"></i> CRM</button></a>
+            <a href=""><button><i class="fa fa-angle-right"></i> Analytics</button></a>
+        </div> -->
+        <a href="index.html"><button class=""><i class="fa fa-tachometer"></i>Home</button></a>
+        <a href="#"><button class="sidenav-active-link"><i class="fa fa-file"></i> Student Dashboard</button></a>
+        <button class=""><i class="fa fa-location-arrow"></i> Navigation</button>
+        <button class=""><i class="fa fa-rocket"></i> Widget</button>
+        <h5>UI Widgets</h5>
+        <button class="dropdown-btn"><i class="fa fa-cube"></i>Basic<i class="fa fa-angle-down fa-lg"
+                style="float: right;"></i></button>
+        <div class="dropdown-container">
+            <a href=""><button><i class="fa fa-angle-right"></i>Square</button></a>
+            <a href=""><button><i class="fa fa-angle-right"></i>Rectangle</button></a>
+            <a href=""><button><i class="fa fa-angle-right"></i>Circle</button></a>
+        </div>
+        <button class="dropdown-btn"><i class="fa fa-paint-brush"></i>Advanced<i class="fa fa-angle-down fa-lg"
+                style="float: right;"></i></button>
+        <div class="dropdown-container">
+            <a href=""><button><i class="fa fa-angle-right"></i>Square</button></a>
+            <a href=""><button><i class="fa fa-angle-right"></i>Rectangle</button></a>
+            <a href=""><button><i class="fa fa-angle-right"></i>Circle</button></a>
+        </div>
+        <button class="dropdown-btn"><i class="fa fa-puzzle-piece"></i>Extra<i class="fa fa-angle-down fa-lg"
+                style="float: right;"></i></button>
+        <div class="dropdown-container">
+            <a href=""><button><i class="fa fa-angle-right"></i>Square</button></a>
+            <a href=""><button><i class="fa fa-angle-right"></i>Rectangle</button></a>
+            <a href=""><button><i class="fa fa-angle-right"></i>Circle</button></a>
+        </div>
+        <button class="dropdown-btn"><i class="fa fa-video-camera"></i>Animations<i class="fa fa-angle-down fa-lg"
+                style="float: right;"></i></button>
+        <div class="dropdown-container">
+            <a href=""><button><i class="fa fa-angle-right"></i>Square</button></a>
+            <a href=""><button><i class="fa fa-angle-right"></i>Rectangle</button></a>
+            <a href=""><button><i class="fa fa-angle-right"></i>Circle</button></a>
+        </div>
+    </div>
+    <div class="flexArea" id="flexArea">
+        <div class="navbar">
+            <ul>
+                <a href="javascript:void(0)" class="openbtn">
+                    <li><i class="fa fa-bars fa-lg" onclick="openNav()"></i></li>
+                </a>
+                <a href="">
+                    <li class="right-float"><span><i class="fa fa-user fa-lg"></i></span> User Name</li>
+                </a>
+                <a href="">
+                    <li class="right-float"><i class="fa fa-bell fa-lg"></i></li>
+                </a>
+                <a href="">
+                    <li class="right-float"><i class="fa fa-comment-o fa-lg"></i></li>
+                </a>
+            </ul>
+
+
+        </div>
+
+        <div class="content-area">
+            <div class="flexContainer" id="dashboardLineContainer">
+                <div class="flex-40 dashboardLine">
+                    <i class="fa fa-home fa-2x" style="float: left;" id="homeIcon"></i>
+                    <div style="margin-bottom: 0;margin-top: 0;">
+                        <h3 style="margin-bottom: 0;margin-top: 2px;"><small>Student Dashboard</small> </h3>
+                        <p style="margin-bottom: 0;margin-top: 0;"><small>Information and Analytics</small> </p>
+                    </div>
+
+                </div>
+                <div class="flex-40-end">
+                    <ul class="breadcrumb" style="float: right;">
+                        <li><a href="#"><i class="fa fa-home"></i></a></li>
+                        <li><small>Student</small></li>
+                    </ul>
+                </div>
+            </div>
+            <h2 style="margin: 1% 2.5% 0 2.5%;">Subjects</h2>
+            <div class="flexContainer">
+                <!-- <div class="flex-30 card4Table card-grid-container" style="flex: 0 0 30%;">
+                    <div class="cardRow1" style="margin-right: %;">
+                        <div style="flex: 0 0 8%;align-self: center;">
+                            <i class="fa fa-user-circle fa-3x" style="color: #4099ff;"></i>
+                            <h2 class="profileLetter" style="background-color: #4099ff;">A</h2>
+                        </div>
+
+                        <div style="flex: 0 0 50%;text-align: left;align-self: center;font-size: 15px;">
+                            <b>ACM-DBIT</b><br> acmdbit@gmail.com
+                        </div>
+
+                        <div style="flex: 0 0 30%;align-self: center;justify-self: flex-end;" class="tableFees">
+                            <span>Rs. 100</span>
+                        </div>
+                    </div>
+
+                    <div class="cardRow2">
+                        <h4>Unity Workshop</h4>
+                    </div>
+
+                    <div class="cardRow3">
+                        <p style="flex: 0 0 40%;margin-left: 5%;">03-02-2020</p>
+                        <p style="flex: 0 0 50%;justify-self: flex-end;color: #449cfc;text-align: right;">
+                            <b>Register</b></p>
+                    </div>
+
+                </div> -->
+                <!-- <div class="flex-30 card4Table card-grid-container" style="flex: 0 0 30%;">
+                    <div class="cardRow1">
+                        <div style="flex: 0 0 10%;align-self: center;">
+                           
+                            <h2 class="profileLetter" style="background-color: #2ED8B6;">C</h2>
+                        </div>
+
+                        <div style="flex: 0 0 50%;text-align: left;align-self: center;font-size: 15px;">
+                            <b>CSI-DBIT</b><br> csidbit@gmail.com
+                        </div>
+
+                        <div style="flex: 0 0 30%;align-self: center;justify-self: flex-end;" class="tableFees">
+                            <span>Rs. 100</span>
+                        </div>
+                    </div>
+
+                    <div class="cardRow2">
+                        <h4>A Roadmap to BE Project: From Beginning to Conclusion</h4>
+                    </div>
+
+                    <div class="cardRow3">
+                        <p style="flex: 0 0 40%;margin-left: 5%;">03-02-2020</p>
+                        <p style="flex: 0 0 50%;justify-self: flex-end;color: #449cfc;text-align: right;">
+                            <b>Register</b></p>
+                    </div>
+
+                </div> -->
+                <div class="flex-25 card4Table card-grid-container" style="flex: 0 0 25%;">
+                    <div class="subname" >
+                        <h2>COA</h2>
+                    </div>
+
+                    <div class="cardRow2">
+                        <div class="progress">
+                            <div class="progress" role="progressbar" style="width: 90%; background-color: #2ED8B6;" ></div>
+                        </div>
+                        <h4 style="text-align: right;"> 90%</h4>
+                    </div>
+                </div>
+                <div class="flex-25 card4Table card-grid-container" style="flex: 0 0 25%;">
+                    <div class="subname" >
+                        <h2>Computer Networks</h2>
+                    </div>
+
+                    <div class="cardRow2">
+                        <div class="progress">
+                            <div class="progress" role="progressbar" style="width: 50%; background-color: lightgreen;" ></div>
+                        </div>
+                        <h4 style="text-align: right;"> 50%</h4>
+                    </div>
+                </div>
+                <div class="flex-25 card4Table card-grid-container" style="flex: 0 0 25%;">
+                    <div class="subname" >
+                        <h2>Advanced Algorithms</h2>
+                    </div>
+
+                    <div class="cardRow2">
+                        <div class="progress">
+                            <div class="progress" role="progressbar" style="width: 70%; background-color: lightpink;" ></div>
+                        </div>
+                        <h4 style="text-align: right;"> 70%</h4>
+                    </div>
+                </div>
+                <div class="flex-25 card4Table card-grid-container" style="flex: 0 0 25%;">
+                    <div class="subname" >
+                        <h2>TCS</h2>
+                    </div>
+
+                    <div class="cardRow2">
+                        <div class="progress">
+                            <div class="progress" role="progressbar" style="width: 90%; background-color: lightsalmon;" ></div>
+                        </div>
+                        <h4 style="text-align: right;"> 90%</h4>
+                    </div>
+                </div>
+
+                
+                
+
+            
+            </div>
+
+        </div>
+
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
