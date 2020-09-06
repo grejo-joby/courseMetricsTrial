@@ -137,6 +137,7 @@ button {
 }
 
 .flexContainer {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -175,9 +176,24 @@ h6 {
   padding-left: 20px;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
 }
+
+.card4TableflexContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: center;
+}
 .card4Table {
+  grid-template-areas:
+    "header header header"
+    "main main main "
+    "footer footer footer";
+  margin: 1rem;
+  min-height: 100px;
+  width: 22vw;
+  min-width: 250px;
   border-radius: 10px;
-  /* padding-left: 20px; */
+
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
 }
 
@@ -304,6 +320,7 @@ ul.breadcrumb li a:hover {
     "footer footer footer";
   grid-gap: 10px;
   min-width: 200px;
+
   /* padding: 10px; */
 }
 
@@ -333,10 +350,10 @@ ul.breadcrumb li a:hover {
   border: 1px;
   background-color: #e9ecef;
   border-radius: 0.25rem;
-
-  
 }
-
+.attendance-graph {
+  min-width: 200px;
+}
 @media only screen and (max-width: 600px) {
   .flexContainer {
     padding-left: 1rem;
@@ -361,5 +378,10 @@ ul.breadcrumb li a:hover {
     min-width: 100%;
 
     /* padding: 10px; */
+  }
+
+  .card4Table {
+    width: 100%;
+    margin: 0.5rem;
   }
 }
