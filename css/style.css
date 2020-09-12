@@ -333,8 +333,6 @@ ul.breadcrumb li a:hover {
   border: 1px;
   background-color: #e9ecef;
   border-radius: 0.25rem;
-
-  
 }
 
 @media only screen and (max-width: 600px) {
@@ -363,3 +361,52 @@ ul.breadcrumb li a:hover {
     /* padding: 10px; */
   }
 }
+
+#attendanceTable {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 94%;
+  margin: auto;
+  /* border: 1px solid #ddd; */
+  /* margin: 0 2%; */
+  text-align: center;
+}
+
+#attendanceTable th,
+td {
+  text-align: left;
+  padding: 8px;
+  text-align: center;
+  /* border-bottom: 1px solid #ddd; */
+}
+
+#attendanceTable tr:hover {background-color: #f2f7fb;}
+
+.firstColAttTable {
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+.firstRowAttTable {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+#attendanceTable2 {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 94%;
+  margin: auto;
+  /* border: 1px solid #ddd; */
+  /* margin: 0 2%; */
+  background-color: #eee;
+  text-align: center;
+  font-weight: 900;
+}
+
+#attendanceTable2 th,
+td {
+  text-align: left;
+  padding: 8px;
+  text-align: center;
+  /* border-bottom: 1px solid #ddd; */
+}
+
+#attendanceTable2 tr:hover {background-color: #f2f7fb;}
