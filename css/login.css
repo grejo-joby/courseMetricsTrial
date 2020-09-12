@@ -37,6 +37,16 @@ body {
   flex-direction: column;
   margin: 1rem;
 }
+@keyframes AnimateKey {
+  0% {
+    transform: scale(0.3, 0.3);
+    clip-path: circle(100% at 50% 50%);
+  }
+  100% {
+    clip-path: ellipse(91% 95% at 8% 25%);
+    transform: scaleX(1, 1);
+  }
+}
 .blue {
   max-width: 50%;
   min-width: 50%;
@@ -46,6 +56,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: 1s ease-out 0s 1 AnimateKey;
 }
 .blue img {
   padding-right: 1rem;
@@ -116,6 +127,16 @@ form {
 }
 
 @media only screen and (max-width: 600px) {
+  @keyframes AnimateKey {
+    0% {
+      transform: scale(0.3, 0.3);
+      clip-path: circle(100% at 50% 50%);
+    }
+    100% {
+      clip-path: circle(100% at 50% 0%);
+      transform: scaleX(1, 1);
+    }
+  }
   .centered {
     background-color: #fff;
     box-shadow: 10px 10px 5px 0px rgba(215, 220, 223, 0.6);
