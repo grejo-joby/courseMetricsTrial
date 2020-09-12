@@ -29,7 +29,8 @@
             <a href=""><button><i class="fa fa-angle-right"></i> Analytics</button></a>
         </div> -->
         <a href="index.html"><button class=""><i class="fa fa-tachometer"></i>Home</button></a>
-        <a href="#"><button class="sidenav-active-link"><i class="fa fa-file"></i> Student Dashboard</button></a>
+        <a href="#"><button class="sidenav-active-link"><i class="fa fa-file"></i> Student Dashboard</button></a>        
+        <a href="student_attendance.html"><button class=""><i class="fa fa-book"></i> Attendance</button></a>
         <button class=""><i class="fa fa-location-arrow"></i> Navigation</button>
         <button class=""><i class="fa fa-rocket"></i> Widget</button>
         <h5>UI Widgets</h5>
@@ -162,11 +163,143 @@
 
 
         </div>
+        <h2 style="margin: 1% 2.5% 1% 2.5%;">Attendance Table</h2>
+        <div style="overflow-x:auto;">
+            <table id="attendanceTable">
+                <tr class="firstRowAttTable">
+                    <th class="firstColAttTable">Date</th>
+                    <th>8:00 - 9:00</th>
+                    <th>9:00 - 10:00</th>
+                    <th>10:00 - 11:00</th>
+                    <th>11:00 - 12:00</th>
+                    <th>12:00 - 13:00</th>
+                    <th>14:00 - 15:00</th>
+                    <th>15:00 - 16:00</th>
+                    <th>16:00 - 17:00</th>
+                    <th>17:00 - 18:00</th>
+                </tr>
+                <tr>
+                    <td class="firstColAttTable">04-09-2020</td>
+                    <td style="background-color: #2ED8B6;">MP</td>
+                    <td style="background-color: #FF5370;">DBMS</td>
+                    <td style="background-color: #2ED8B6;">TCS</td>
+                    <td style="background-color: #2ED8B6;">CN</td>
+                    <td style="background-color: #2ED8B6;">AA</td>
+                    <td style="background-color: #2ED8B6;">CN Lab</td>
+                    <td style="background-color: #FF5370;">MS</td>
+                    <td style="background-color: #2ED8B6;">MP Lab</td>
+                    <td style="background-color: #FF5370;">AA Lab</td>
+                </tr>
+                <tr>
+                    <td class="firstColAttTable">05-09-2020</td>
+                    <td style="background-color: #2ED8B6;">MP</td>
+                    <td style="background-color: #2ED8B6;">TCS</td>
+                    <td style="background-color: #FF5370;">AA Lab</td>
+                    <td style="background-color: #2ED8B6;">CN</td>
+                    <td style="background-color: #FF5370;">MS</td>
+                    <td style="background-color: #FF5370;">DBMS</td>
+                    <td style="background-color: #2ED8B6;">CN Lab</td>
+                    <td style="background-color: #2ED8B6;">AA</td>
+                    <td style="background-color: #2ED8B6;">MP Lab</td>
+                </tr>
+                <tr>
+                    <td class="firstColAttTable">06-09-2020</td>
+                    <td style="background-color: #2ED8B6;">CN</td>
+                    <td style="background-color: #FF5370;">AA Lab</td>
+                    <td style="background-color: #2ED8B6;">MP</td>
+                    <td style="background-color: #FF5370;">DBMS</td>
+                    <td style="background-color: #2ED8B6;">AA</td>
+                    <td style="background-color: #2ED8B6;">TCS</td>
+                    <td style="background-color: #2ED8B6;">MP Lab</td>
+                    <td style="background-color: #FF5370;">MS</td>
+                    <td style="background-color: #2ED8B6;">CN Lab</td>
+                </tr>
+                <tr>
+                    <td class="firstColAttTable">07-09-2020</td>
+                    <td style="background-color: #2ED8B6;">MP</td>
+                    <td style="background-color: #2ED8B6;">TCS</td>
+                    <td style="background-color: #FF5370;">MS</td>
+                    <td style="background-color: #2ED8B6;">CN Lab</td>
+                    <td style="background-color: #2ED8B6;">MP Lab</td>
+                    <td style="background-color: #FF5370;">DBMS</td>
+                    <td style="background-color: #2ED8B6;">CN</td>
+                    <td style="background-color: #2ED8B6;">AA</td>
+                    <td style="background-color: #FF5370;">AA Lab</td>
+                </tr>
+            </table>
+        </div>
+<br><br>
+        <div style="overflow-x:auto;">
+            <table id="attendanceTable2">
+                <tr class="firstRowAttTable">
+                    <th class="firstColAttTable">Date</th>
+                    <th>8:00 - 9:00</th>
+                    <th>9:00 - 10:00</th>
+                    <th>10:00 - 11:00</th>
+                    <th>11:00 - 12:00</th>
+                    <th>12:00 - 13:00</th>
+                    <th>14:00 - 15:00</th>
+                    <th>15:00 - 16:00</th>
+                    <th>16:00 - 17:00</th>
+                    <th>17:00 - 18:00</th>
+                </tr>
+                <tr>
+                    <td class="firstColAttTable">04-09-2020</td>
+                    <td style="color: #2ED8B6;">MP</td>
+                    <td style="color: #FF5370;">DBMS</td>
+                    <td style="color: #2ED8B6;">TCS</td>
+                    <td style="color: #2ED8B6;">CN</td>
+                    <td style="color: #2ED8B6;">AA</td>
+                    <td style="color: #2ED8B6;">CN Lab</td>
+                    <td style="color: #FF5370;">MS</td>
+                    <td style="color: #2ED8B6;">MP Lab</td>
+                    <td style="color: #FF5370;">AA Lab</td>
+                </tr>
+                <tr>
+                    <td class="firstColAttTable">05-09-2020</td>
+                    <td style="color: #2ED8B6;">MP</td>
+                    <td style="color: #2ED8B6;">TCS</td>
+                    <td style="color: #FF5370;">AA Lab</td>
+                    <td style="color: #2ED8B6;">CN</td>
+                    <td style="color: #FF5370;">MS</td>
+                    <td style="color: #FF5370;">DBMS</td>
+                    <td style="color: #2ED8B6;">CN Lab</td>
+                    <td style="color: #2ED8B6;">AA</td>
+                    <td style="color: #2ED8B6;">MP Lab</td>
+                </tr>
+                <tr>
+                    <td class="firstColAttTable">06-09-2020</td>
+                    <td style="color: #2ED8B6;">CN</td>
+                    <td style="color: #FF5370;">AA Lab</td>
+                    <td style="color: #2ED8B6;">MP</td>
+                    <td style="color: #FF5370;">DBMS</td>
+                    <td style="color: #2ED8B6;">AA</td>
+                    <td style="color: #2ED8B6;">TCS</td>
+                    <td style="color: #2ED8B6;">MP Lab</td>
+                    <td style="color: #FF5370;">MS</td>
+                    <td style="color: #2ED8B6;">CN Lab</td>
+                </tr>
+                <tr>
+                    <td class="firstColAttTable">07-09-2020</td>
+                    <td style="color: #2ED8B6;">MP</td>
+                    <td style="color: #2ED8B6;">TCS</td>
+                    <td style="color: #FF5370;">MS</td>
+                    <td style="color: #2ED8B6;">CN Lab</td>
+                    <td style="color: #2ED8B6;">MP Lab</td>
+                    <td style="color: #FF5370;">DBMS</td>
+                    <td style="color: #2ED8B6;">CN</td>
+                    <td style="color: #2ED8B6;">AA</td>
+                    <td style="color: #FF5370;">AA Lab</td>
+                </tr>
+            </table>
+        </div>
 
     </div>
 
     </div>
     <script src="js/script.js"></script>
+
+
 </body>
 
 </html>

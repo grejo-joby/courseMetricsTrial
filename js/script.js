@@ -13,13 +13,20 @@ for (i = 0; i < dropdown.length; i++) {
     }
   });
 }
-
+var s;
+function toggle(){
+  if(s==0){closeNav(); s=1;}
+  else{openNav(); s=0;}
+  
+}
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
   document.getElementById("flexArea").style.marginLeft = "250px";
+  
 }
 
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
   document.getElementById("flexArea").style.marginLeft = "0";
+  
 }

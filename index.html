@@ -18,7 +18,6 @@
 
 <body>
     <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn"><i class="fa fa-times" onclick="closeNav()"></i></a>
         <h3 class="logo">CourseMatrics</h3>
         <h5>Navigation</h5>
         <!-- <button class="dropdown-btn sidenav-active-link"><span><i class="fa fa-tachometer"></i> Dashboard</span><span><i
@@ -30,6 +29,7 @@
         </div> -->
         <a href="#"><button class="sidenav-active-link"><i class="fa fa-tachometer"></i>Home</button></a>
         <a href="student.html"><button class=""><i class="fa fa-file"></i> Student Dashboard</button></a>
+        <a href="student_attendance.html"><button class=""><i class="fa fa-book"></i> Attendance</button></a>
         <button class=""><i class="fa fa-location-arrow"></i> Navigation</button>
         <button class=""><i class="fa fa-rocket"></i> Widget</button>
         <h5>UI Widgets</h5>
@@ -65,8 +65,8 @@
     <div class="flexArea" id="flexArea">
         <div class="navbar">
             <ul>
-                <a href="javascript:void(0)" class="openbtn">
-                    <li><i class="fa fa-bars fa-lg" onclick="openNav()"></i></li>
+                <a href="javascript:void(0)" class="openbtn"> 
+                    <li><i class="fa fa-bars fa-lg " onclick="toggle()"></i></li>
                 </a>
                 <a href="">
                     <li class="right-float"><span><i class="fa fa-user fa-lg"></i></span> User Name</li>
