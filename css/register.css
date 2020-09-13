@@ -16,7 +16,6 @@ body {
 
 input, button {
   outline: none;
-  cursor: pointer;
 }
 .centered {
   background-color: #fff;
@@ -110,8 +109,25 @@ form {
   border-bottom-right-radius: 1.5rem;
   font-weight: 200;
   font-size: 1rem;
-
   border: none;
+}
+.inputContainer input:focus {
+  width: 58%;
+}
+.inputContainer select {
+  height: 2.8rem;
+  /* margin: 0.2rem; */
+  width: 55%;
+  background-color: #e1e4e6;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  font-weight: 200;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+}
+.inputContainer select:focus {
+  width: 58%;
 }
 .buttonContainer {
   margin-top: 1rem;
@@ -122,18 +138,27 @@ form {
 .buttonContainer button {
   height: 2.8rem;
   /* margin: 0.2rem; */
-  width: 40%;
+  width: 35%;
   background-color: #4099ff;
   border-radius: 1.5rem;
   color: #fff;
   border: none;
   font-size: 1rem;
   font-weight: 600;
+  transition-duration: 0.3s;
+  margin: 0.2rem;
 }
 .buttonContainer button:hover {
   height: 2.9rem;
-  width: 42%;
+  /* margin: 0.2rem; */
+  width: 38%;
   font-size: 1.2rem;
+}
+input {
+  transition: 0.4s;
+}
+input.invalid {
+  background-color: #ffaaaa;
 }
 
 @media only screen and (max-width: 600px) {
@@ -237,4 +262,50 @@ form {
     font-size: 1rem;
     font-weight: 600;
   }
+}
+
+
+
+#svg_form_time {
+  height: 15px;
+  max-width: 80%;
+  margin: 40px auto 20px;
+  display: block;
+}
+
+#svg_form_time circle,
+#svg_form_time rect {
+  fill: white;
+}
+
+.disabled {
+  display:none;
+}
+
+section {
+  backdrop-filter:blur(10px);
+  transition:transform 0.2s ease-in-out;
+}
+
+.tab {
+  display: none;
+}
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #4099FF;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #29b32d;
 }

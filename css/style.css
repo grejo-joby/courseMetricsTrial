@@ -6,6 +6,12 @@ body {
   margin: 0;
   height: 100%;
   font-family: "Quicksand", sans-serif;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .flexArea {
   height: 100%;
@@ -43,6 +49,7 @@ button {
   color: #f0f3f8;
   outline: none;
   font-family: "Quicksand", sans-serif;
+  cursor: pointer;
 }
 .sidenav a {
   text-decoration: none;
