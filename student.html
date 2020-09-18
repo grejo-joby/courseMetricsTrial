@@ -190,12 +190,12 @@
 
 
             <h2 style="margin: 1% 2.5% 1% 2.5%;">Attendance</h2>
-            <div class="cardRow1">
-                <div class="flex-50  card-grid-container" style="flex: 0 0 50%;">
+            <div class="cardRow1 chart">
+                <div style="flex: 0 0 50%;">
                     <canvas id="attChart"></canvas>
                 </div>
-                <div class="flex-50  card-grid-container" style="flex: 0 0 50%;">
-                    <canvas id="line-chart" ></canvas>
+                <div style="flex: 0 0 50%;">
+                    <canvas id="line-chart"></canvas>
                 </div>
             </div>
         </div>
@@ -205,84 +205,84 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script>
         var canvas = document.getElementById("attChart");
-var ctx = canvas.getContext('2d');
+        var ctx = canvas.getContext('2d');
 
-// Global Options:
- Chart.defaults.global.defaultFontColor = 'black';
- Chart.defaults.global.defaultFontSize = 16;
+        // Global Options:
+        Chart.defaults.global.defaultFontColor = 'black';
+        Chart.defaults.global.defaultFontSize = 16;
 
-var data = {
-    labels: ["MP","TCS","Computer Networks","Algorithms","DBMS"],
-      datasets: [
-        {
-            fill: true,
-            backgroundColor: [
-            "#2ecc71",
-        "#3498db",
-        "#95a5a6",
-        "#9b59b6",
-        "#f1c40f",
-            ],
-            /*backgroundColor: [ //Alternative colours
-                '#FFF1C9',
-                '#F7B7A3',
-                '#EA5F89',
-                '#9B3192',
-                '#57167E'
-            ],*/
-            data: [10,10,20,30,30],
-            borderWidth: [2,2,2,2,2]
-        }
-    ]
-};
+        var data = {
+            labels: ["MP", "TCS", "Computer Networks", "Algorithms", "DBMS"],
+            datasets: [
+                {
+                    fill: true,
+                    backgroundColor: [
+                        "#2ecc71",
+                        "#3498db",
+                        "#95a5a6",
+                        "#9b59b6",
+                        "#f1c40f",
+                    ],
+                    /*backgroundColor: [ //Alternative colours
+                        '#FFF1C9',
+                        '#F7B7A3',
+                        '#EA5F89',
+                        '#9B3192',
+                        '#57167E'
+                    ],*/
+                    data: [10, 10, 20, 30, 30],
+                    borderWidth: [2, 2, 2, 2, 2]
+                }
+            ]
+        };
 
-// Notice the rotation from the documentation.
+        // Notice the rotation from the documentation.
 
-var options = {
-        title: {
-                  display: true,
-                  position: 'top'
-              },
-};
+        var options = {
+            title: {
+                display: true,
+                position: 'top'
+            },
+        };
 
 
-// Chart declaration:
-var myBarChart = new Chart(ctx, {
-    type: 'pie',
-    data: data,
-    options: options
-});
+        // Chart declaration:
+        var myBarChart = new Chart(ctx, {
+            type: 'pie',
+            data: data,
+            options: options
+        });
 
-    //Code for Line Chart
-    new Chart(document.getElementById("line-chart"), {
-  type: 'line',
-  data: {
-    labels: ['Jan','Feb','Mar','Apr','May'],
-    datasets: [{ 
-        data: [86,80,75,78,60],
-        label: "MP",
-        borderColor: "#3e95cd",
-        fill: false
-      }, { 
-        data: [90,95,100,88,81],
-        label: "CN",
-        borderColor: "#8e5ea2",
-        fill: false
-      }, { 
-        data: [76,87,83,80,89],
-        label: "TCS",
-        borderColor: "#3cba9f",
-        fill: false
-      }, 
-    ]
-  },
-  options: {
-    title: {
-      display: true,
-      text: 'World population per region (in millions)'
-    }
-  }
-});
+        //Code for Line Chart
+        new Chart(document.getElementById("line-chart"), {
+            type: 'line',
+            data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+                datasets: [{
+                    data: [86, 80, 75, 78, 60],
+                    label: "MP",
+                    borderColor: "#3e95cd",
+                    fill: false
+                }, {
+                    data: [90, 95, 100, 88, 81],
+                    label: "CN",
+                    borderColor: "#8e5ea2",
+                    fill: false
+                }, {
+                    data: [76, 87, 83, 80, 89],
+                    label: "TCS",
+                    borderColor: "#3cba9f",
+                    fill: false
+                },
+                ]
+            },
+            options: {
+                title: {
+                    display: true,
+                    text: 'World population per region (in millions)'
+                }
+            }
+        });
 
     </script>
 </body>

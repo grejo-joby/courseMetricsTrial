@@ -14,7 +14,8 @@ body {
   justify-content: center;
 }
 
-input, button {
+input,
+button {
   outline: none;
 }
 .centered {
@@ -43,8 +44,16 @@ input, button {
 }
 @keyframes AnimateKey {
   0% {
-    transform: scale(0.3, 0.3);
-    clip-path: circle(100% at 50% 50%);
+    transform: scale(1, 1);
+    clip-path: ellipse(10% 10% at 0% 0%);
+  }
+  30% {
+    clip-path: ellipse(40% 40% at 0% 0%);
+    transform: scaleX(1, 1);
+  }
+  70% {
+    clip-path: ellipse(60% 60% at 4% 15%);
+    transform: scaleX(1, 1);
   }
   100% {
     clip-path: ellipse(91% 95% at 8% 25%);
@@ -60,7 +69,7 @@ input, button {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: 1s ease-out 0s 1 AnimateKey;
+  animation: 0.5s linear 0s 1 AnimateKey;
 }
 .blue img {
   padding-right: 1rem;
@@ -92,7 +101,7 @@ form {
 .inputContainer i {
   color: #aeb0b2;
   font-size: 1.4rem;
-  background-color: #e1e4e6;
+  background-color: #f2f7fb;
   padding-right: 0.8rem;
   padding-left: 0.8rem;
   padding-top: 0.7rem;
@@ -104,7 +113,7 @@ form {
   height: 2.8rem;
   /* margin: 0.2rem; */
   width: 55%;
-  background-color: #e1e4e6;
+  background-color: #f2f7fb;
   border-top-right-radius: 1.5rem;
   border-bottom-right-radius: 1.5rem;
   font-weight: 200;
@@ -118,7 +127,7 @@ form {
   height: 2.8rem;
   /* margin: 0.2rem; */
   width: 55%;
-  background-color: #e1e4e6;
+  background-color: #f2f7fb;
   border-top-right-radius: 1.5rem;
   border-bottom-right-radius: 1.5rem;
   font-weight: 200;
@@ -129,6 +138,12 @@ form {
 .inputContainer select:focus {
   width: 58%;
 }
+
+option {
+  background-color: #f2f7fb;
+  border-radius: 2rem;
+}
+
 .buttonContainer {
   margin-top: 1rem;
   display: flex;
@@ -164,8 +179,8 @@ input.invalid {
 @media only screen and (max-width: 600px) {
   @keyframes AnimateKey {
     0% {
-      transform: scale(0.3, 0.3);
-      clip-path: circle(100% at 50% 50%);
+      transform: scale(1, 1);
+      clip-path: circle(0% at 0% 0%);
     }
     100% {
       clip-path: circle(100% at 50% 0%);
@@ -264,8 +279,6 @@ input.invalid {
   }
 }
 
-
-
 #svg_form_time {
   height: 15px;
   max-width: 80%;
@@ -279,12 +292,12 @@ input.invalid {
 }
 
 .disabled {
-  display:none;
+  display: none;
 }
 
 section {
-  backdrop-filter:blur(10px);
-  transition:transform 0.2s ease-in-out;
+  backdrop-filter: blur(10px);
+  transition: transform 0.2s ease-in-out;
 }
 
 .tab {
@@ -294,8 +307,8 @@ section {
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #4099FF;
-  border: none;  
+  background-color: #4099ff;
+  border: none;
   border-radius: 50%;
   display: inline-block;
   opacity: 0.5;
@@ -307,5 +320,5 @@ section {
 
 /* Mark the steps that are finished and valid: */
 .step.finish {
-  background-color: #29b32d;
+  background-color: #4099ff;
 }

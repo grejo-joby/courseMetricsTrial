@@ -183,24 +183,24 @@ h6 {
 }
 .flex-card {
   flex: 0 0 16.8%;
-  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 7px 9px 1px rgba(224, 228, 231, 1);
   margin: 1%;
   padding-left: 20px;
-  border-radius: 5px;
+  border-radius: 0.25rem;
   /* text-align: center; */
 }
 .card {
+  border: 1px solid rgba(0, 0, 0, 0.125);
   background-color: #ffff;
-  border-radius: 5px;
+  border-radius: 0.25rem;
   padding-left: 20px;
-  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 7px 9px 1px rgba(224, 228, 231, 1);
 }
 
 .card4TableflexContainer {
   background-color: #f2f7fb;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   justify-content: center;
 }
 .card4Table {
@@ -210,12 +210,12 @@ h6 {
     "main main main "
     "footer footer footer";
   margin: 1rem;
-  min-height: 100px;
+  min-height: 120px;
   width: 22vw;
-  min-width: 250px;
-  border-radius: 5px;
+  min-width: 500px;
+  border-radius: 0.25rem;
 
-  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 7px 9px 1px rgba(224, 228, 231, 1);
 }
 
 .flex-30 {
@@ -246,8 +246,8 @@ h6 {
 #homeIcon {
   background-color: #449ff5;
   color: white;
-  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
-  border-radius: 15px;
+  box-shadow: 0px 7px 9px 1px rgba(224, 228, 231, 1);
+  border-radius: 0.25rem;
   margin-right: 2%;
   padding: 1%;
 }
@@ -297,12 +297,7 @@ ul.breadcrumb li a:hover {
 }
 
 .tableFees {
-  text-align: center;
-  /* margin-right: 2%; */
-}
-
-.tableFees {
-  background-color: #ccc;
+  background-color: #dddd;
   padding: 2%;
   border-radius: 5px;
   display: flex;
@@ -320,6 +315,19 @@ ul.breadcrumb li a:hover {
   margin-top: 2%;
   /* flex-wrap: wrap; */
 }
+.cardRow1.chart {
+  background-color: #ffff;
+  box-shadow: 0px 7px 9px 1px rgba(224, 228, 231, 1);
+  padding: 0.5rem;
+
+  border-radius: 0.25rem;
+  overflow: hidden;
+
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .cardRow2 {
   grid-area: main;
   padding-left: 3%;
@@ -327,7 +335,7 @@ ul.breadcrumb li a:hover {
 
 .cardRow3 {
   grid-area: footer;
-  background-color: #eeeeee;
+  background-color: #eeee;
   display: flex;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -376,6 +384,21 @@ ul.breadcrumb li a:hover {
   min-width: 200px;
 }
 @media only screen and (max-width: 600px) {
+  .cardRow1.chart {
+    background-color: #ffff;
+    box-shadow: 0px 7px 9px 1px rgba(224, 228, 231, 1);
+    padding: 0.5rem;
+
+    border-radius: 0.25rem;
+    overflow: hidden;
+
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
   .content-area {
     display: flex;
     flex-direction: column;
@@ -406,6 +429,7 @@ ul.breadcrumb li a:hover {
   }
 
   .card4Table {
+    min-width: 0px;
     width: 100%;
     margin: 0.5rem;
   }
