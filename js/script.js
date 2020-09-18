@@ -15,8 +15,8 @@ for (i = 0; i < dropdown.length; i++) {
 }
 var s;
 function toggle(){
-  if(s==0){closeNav(); s=1;}
-  else{openNav(); s=0;}
+  if(s==0){openNav(); s=1;}
+  else{closeNav(); s=0;}
   
 }
 function openNav() {
