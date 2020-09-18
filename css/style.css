@@ -143,9 +143,28 @@ button {
   color: white;
 }
 .openbtn {
+  display: block;
   color: #333;
 }
+.openbtnhide {
+  display: none;
+}
+.closebtn {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: Red; */
+  text-align: center;
+}
 
+.closebtn i {
+  background-color: #ddd;
+  padding: 1rem 1.2rem;
+  border-radius: 50%;
+  color: #1d2531;
+}
 .right-float {
   /* display: inline-flex; */
   float: right;

@@ -51,3 +51,31 @@ function toggle() {
 //   document.getElementById("mySidenav").style.width = "0";
 //   document.getElementById("flexArea").style.marginLeft = "0";
 // }
+function close() {
+  var temp1 = document.getElementById("mySidenav");
+  var temp2 = document.getElementById("flexArea");
+  (style = window.getComputedStyle(temp1)),
+    (width = style.getPropertyValue("width"));
+  (style = window.getComputedStyle(temp2)),
+    (ml = style.getPropertyValue("margin-left"));
+  // console.log(ml);
+  // console.log(width);
+  if (width == "0px") {
+    temp1.style.width = "250px";
+  } else {
+    temp1.style.width = "0px";
+  }
+  if (ml == "0px") {
+    temp2.style.marginLeft = "250px";
+  } else {
+    temp2.style.marginLeft = "0px";
+  }
+
+  // if (s == 0) {
+  //   openNav();
+  //   s = 1;
+  // } else {
+  //   closeNav();
+  //   s = 0;
+  // }
+}
