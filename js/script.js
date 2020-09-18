@@ -14,7 +14,7 @@ for (i = 0; i < dropdown.length; i++) {
   });
 }
 // var s;
-function toggle() {
+function toggle2() {
   var temp1 = document.getElementById("mySidenav");
   var temp2 = document.getElementById("flexArea");
   (style = window.getComputedStyle(temp1)),
@@ -51,7 +51,14 @@ function toggle() {
 //   document.getElementById("mySidenav").style.width = "0";
 //   document.getElementById("flexArea").style.marginLeft = "0";
 // }
-function close() {
+function toggle() {
+  try {
+    var temp3 = document.getElementsByClassName("openbtn")[0];
+    temp3.className = "openbtnhide";
+  } catch {
+    var temp3 = document.getElementsByClassName("openbtnhide")[0];
+    temp3.className = "openbtn";
+  }
   var temp1 = document.getElementById("mySidenav");
   var temp2 = document.getElementById("flexArea");
   (style = window.getComputedStyle(temp1)),
