@@ -191,13 +191,14 @@
 
             <h2 style="margin: 1% 2.5% 1% 2.5%;">Attendance</h2>
             <div class="cardRow1 chart">
-                <div style="flex: 0 0 50%;">
+                <div style="flex: 0 0 50%; height:40vh; width:100% ; flex-wrap: wrap;" > 
                     <canvas id="attChart"></canvas>
                 </div>
-                <div style="flex: 0 0 50%;">
+                <div style="flex: 0 0 50%; height:40vh; width:100%; flex-wrap: wrap;" >
                     <canvas id="line-chart"></canvas>
                 </div>
             </div>
+            
         </div>
 
     </div>
@@ -243,6 +244,9 @@
                 display: true,
                 position: 'top'
             },
+            responsive:true,
+            maintainAspectRatio: false,
+            label:{responsive:true,}
         };
 
 
@@ -279,8 +283,13 @@
             options: {
                 title: {
                     display: true,
-                    text: 'World population per region (in millions)'
-                }
+                    text: 'World population per region (in millions)',
+                    responsive:true,
+                },
+                
+            label:{responsive:true,},
+                responsive:true,
+                maintainAspectRatio: false,
             }
         });
 
