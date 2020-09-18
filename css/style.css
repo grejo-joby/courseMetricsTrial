@@ -23,7 +23,9 @@ body {
 button {
   outline: none;
 }
-
+#sidenav {
+  width: 250px;
+}
 .sidenav {
   background-color: #263544;
   color: #a7b1be;
@@ -396,13 +398,11 @@ ul.breadcrumb li a:hover {
 }
 
 @media only screen and (max-width: 600px) {
-
-  .flexArea{
+  #flexArea {
     margin-left: 0;
   }
-  .sidebar{
+  #mySidenav {
     width: 0;
-
   }
   .cardRow1.chart {
     width: 90%;
@@ -512,4 +512,3 @@ td {
 #attendanceTable2 tr:hover {
   background-color: #f2f7fb;
 }
-
