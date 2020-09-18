@@ -34,6 +34,7 @@ button {
   left: 0;
   overflow-x: hidden;
   transition: 0.5s;
+  font-size: 1rem;
 }
 
 .sidenav .logo {
@@ -53,7 +54,7 @@ button {
 }
 .sidenav a {
   text-decoration: none;
-  font-size: 25px;
+
   display: block;
   transition: 0.4s;
   font-family: "Quicksand", sans-serif;
@@ -61,6 +62,9 @@ button {
 .sidenav h5 {
   margin-left: 15px;
   margin-bottom: 5px;
+}
+.sidenav button {
+  font-size: 1.1rem;
 }
 
 .sidenav-active-set {
@@ -77,7 +81,8 @@ button {
 }
 
 .sidenav i {
-  padding: 0 5px;
+  font-size: 1.1rem;
+  padding: 0 0.8rem;
 }
 
 .dropdown-container {
