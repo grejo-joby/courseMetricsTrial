@@ -59,6 +59,8 @@ function validateForm() {
     if (y[i].value == "") {
       // add an "invalid" class to the field:
       y[i].className += " invalid";
+      ShowError(String(y[i].placeholder) + " cannot be empty");
+      return;
       // and set the current valid status to false
       valid = false;
     }
@@ -66,24 +68,37 @@ function validateForm() {
       if (!StudentIdReg.test(y[i].value.trim())) {
         y[i].className += " invalid";
         valid = false;
+        ShowError(
+          String(y[i].placeholder) + " has to be Numeric and of the length 12"
+        );
+        return;
       }
     }
     if (y[i].name == "lname") {
       if (!nameReg.test(y[i].value.trim())) {
         y[i].className += " invalid";
         valid = false;
+        ShowError(String(y[i].placeholder) + " must contain only alphabets");
+        return;
       }
     }
     if (y[i].name == "fname") {
       if (!nameReg.test(y[i].value.trim())) {
         y[i].className += " invalid";
         valid = false;
+        ShowError(String(y[i].placeholder) + " must contain only alphabets");
+        return;
       }
     }
     if (y[i].name == "phoneNo") {
       if (!ContactReg.test(y[i].value.trim())) {
         y[i].className += " invalid";
         valid = false;
+        ShowError(
+          String(y[i].placeholder) +
+            " must contain only numbers and be of the lenght 10"
+        );
+        return;
       }
     }
     if (y[i].name == "email") {
@@ -96,6 +111,16 @@ function validateForm() {
       if (!passwordReg.test(y[i].value.trim())) {
         y[i].className += " invalid";
         valid = false;
+        ShowError(
+          String(y[i].placeholder) +
+            " must be atleast of the length 8 and have atleast one number or alphabet"
+        );
+        return;
+      }
+      if (y[i].value != document.getElementsByName("pswd2")[0].value) {
+        ShowError("Password do not match");
+        valid = false;
+        return;
       }
     }
   }
@@ -106,7 +131,27 @@ function validateForm() {
   return valid; // return the valid status
 }
 
+function ShowError(error) {
+  var errorCard = `    <div class="ErrorCard">
+
+
+<i class="fa fa-exclamation-circle"></i>
+<p>${error}</p>
+
+</div>`;
+  clearErrors();
+  var Body = document.getElementsByClassName("errors")[0];
+
+  Body.innerHTML += errorCard;
+}
+
+function clearErrors() {
+  var Body = document.getElementsByClassName("errors")[0];
+  Body.innerHTML = "";
+}
+
 function fixStepIndicator(n) {
+  clearErrors();
   // This function removes the "active" class of all steps...
   var i,
     x = document.getElementsByClassName("step");
