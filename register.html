@@ -25,22 +25,26 @@
                         <div class="tab">
                             <div class="inputContainer">
                                 <i class="fa fa-user"></i>
-                                <input type="text" name="name" placeholder="Full Name" oninput="this.className = ''">
+                                <input type="text" name="fname" placeholder="First Name" oninput="this.className = ''">
                             </div>
                             <div class="inputContainer">
-                                <i class="fa fa-internet-explorer"></i>
-                                <input type="email" name="email" placeholder="Email Address"
-                                    oninput="this.className = ''">
+                                <i class="fa fa-user"></i>
+                                <input type="text" name="lname" placeholder="Last Name" oninput="this.className = ''">
                             </div>
+
                             <div class="inputContainer">
-                                <i class="fa fa-lock"></i>
+                                <i class="fa fa-id-card"></i>
                                 <input type="text" name="StudentID" placeholder="Student ID"
                                     oninput="this.className = ''">
                             </div>
-                            <div class="inputContainer">
+                            <!-- <div class="inputContainer">
                                 <i class="fa fa-address-book-o"></i>
                                 <input type="text" name="branch" placeholder="Branch" oninput="this.className = ''">
-                            </div>
+                            </div> -->
+
+                        </div>
+
+                        <div class="tab">
                             <div class="inputContainer">
                                 <i class="fa fa-clock-o"></i>
                                 <select name="year" id="year" oninput="this.className = ''">
@@ -50,13 +54,28 @@
                                     <option value="BE">Fourth Year</option>
                                 </select>
                             </div>
+                            <div class="inputContainer">
+                                <i class="fa fa-user"></i>
+                                <input type="text" name="phoneNo" placeholder="Contact Number"
+                                    oninput="this.className = ''">
+                            </div>
+                            <div class="inputContainer">
+                                <i class="fa fa-id-card"></i>
+                                <input type="date" name="DOB" placeholder="DOB" oninput="this.className = ''">
+                            </div>
+
                         </div>
 
                         <div class="tab">
                             <div class="inputContainer">
+                                <i class="fa fa-internet-explorer"></i>
+                                <input type="email" name="email" placeholder="Email Address"
+                                    oninput="this.className = ''">
+                            </div>
+                            <!-- <div class="inputContainer">
                                 <i class="fa fa-user"></i>
                                 <input type="text" name="uname" placeholder="Username" oninput="this.className = ''">
-                            </div>
+                            </div> -->
                             <div class="inputContainer">
                                 <i class="fa fa-lock"></i>
                                 <input type="password" name="pswd" placeholder="Password" oninput="this.className = ''">
@@ -64,17 +83,7 @@
 
                         </div>
 
-                        <div class="tab">
-                            <div class="inputContainer">
-                                <i class="fa fa-user"></i>
-                                <input type="text" name="uname" placeholder="Username" oninput="this.className = ''">
-                            </div>
-                            <div class="inputContainer">
-                                <i class="fa fa-lock"></i>
-                                <input type="password" name="pswd" placeholder="Password" oninput="this.className = ''">
-                            </div>
 
-                        </div>
 
                         <div class="buttonContainer">
                             <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
@@ -91,10 +100,7 @@
                 </div>
             </div>
         </div>
-        <!-- Footer -->
-        <div class="navbar" style="display: flex;justify-content: center;align-items: center; color: #A9A9A9;">
-            <h4 >Copyrights @ CourseMetrics 2020</h4>
-           </div>
+
     </div>
 
 
