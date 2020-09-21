@@ -400,12 +400,16 @@ ul.breadcrumb li a:hover {
   border: 1px;
   background-color: #e9ecef;
   border-radius: 0.25rem;
+  margin-bottom: 5%;
 }
 .attendance-graph {
   min-width: 200px;
 }
 
 @media only screen and (max-width: 600px) {
+  .columnatt{
+    min-width: 100%;
+  }
   .usernavhide {
     display: none !important;
   }
@@ -613,4 +617,29 @@ td {
 
 #attendance_form_table_data tr > td > input {
   zoom: 1.5;
+}
+
+.columnatt {
+  float: left;
+  width: 50%;
+}
+.rowatt:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.cardforAtt {
+  background-color: #fff;
+  grid-template-areas:
+    "header header header"
+    "main main main "
+    "footer footer footer";
+  margin: 1rem;
+  min-height: 120px;
+  width: 100%;
+  min-width: 500px;
+  border-radius: 0.25rem;
+
+  box-shadow: 0px 7px 9px 1px rgba(224, 228, 231, 1);
 }
