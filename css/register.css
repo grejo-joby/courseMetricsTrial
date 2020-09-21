@@ -4,9 +4,13 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
+html {
+  height: 100%;
+}
 body {
-  height: 100vh;
+  min-height: 100%;
+}
+body {
   background-color: #f2f7fb;
   display: flex;
   flex-direction: column;
@@ -23,8 +27,9 @@ button {
   box-shadow: 10px 10px 5px 0px rgba(215, 220, 223, 0.6);
   min-width: 40%;
   min-width: 60%;
-  height: 75vh;
+  min-height: 90%;
   border-radius: 1rem;
+  overflow: hidden;
 }
 .maincontatiner {
   width: 95%;
