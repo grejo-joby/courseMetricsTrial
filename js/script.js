@@ -51,7 +51,7 @@ function toggle2() {
 //   document.getElementById("mySidenav").style.width = "0";
 //   document.getElementById("flexArea").style.marginLeft = "0";
 // }
-function toggle() {
+function toggleF() {
   try {
     var temp3 = document.getElementsByClassName("openbtn")[0];
     temp3.className = "openbtnhide";
@@ -77,7 +77,8 @@ function toggle() {
   } else {
     temp2.style.marginLeft = "0px";
   }
-
+  var UserNav = document.getElementById("usernav");
+  UserNav.classList.toggle("usernavhide");
   // if (s == 0) {
   //   openNav();
   //   s = 1;
