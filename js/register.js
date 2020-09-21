@@ -45,17 +45,58 @@ function validateForm() {
     y,
     i,
     valid = true;
+  var Emailreg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+  var nameReg = /^[a-zA-Z\s]*$/;
+  var StudentIdReg = /^[0-9]{12}/;
+  var ContactReg = /^[0-9]{10}/;
+  var passwordReg = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
   x = document.getElementsByClassName("tab");
   y = x[currentTab].getElementsByTagName("input");
   // A loop that checks every input field in the current tab:
   for (i = 0; i < y.length; i++) {
     // If a field is empty...
-    console.log(y[i].name);
+
     if (y[i].value == "") {
       // add an "invalid" class to the field:
       y[i].className += " invalid";
       // and set the current valid status to false
       valid = false;
+    }
+    if (y[i].name == "StudentID") {
+      if (!StudentIdReg.test(y[i].value.trim())) {
+        y[i].className += " invalid";
+        valid = false;
+      }
+    }
+    if (y[i].name == "lname") {
+      if (!nameReg.test(y[i].value.trim())) {
+        y[i].className += " invalid";
+        valid = false;
+      }
+    }
+    if (y[i].name == "fname") {
+      if (!nameReg.test(y[i].value.trim())) {
+        y[i].className += " invalid";
+        valid = false;
+      }
+    }
+    if (y[i].name == "phoneNo") {
+      if (!ContactReg.test(y[i].value.trim())) {
+        y[i].className += " invalid";
+        valid = false;
+      }
+    }
+    if (y[i].name == "email") {
+      if (!Emailreg.test(y[i].value.trim())) {
+        y[i].className += " invalid";
+        valid = false;
+      }
+    }
+    if (y[i].name == "pswd") {
+      if (!passwordReg.test(y[i].value.trim())) {
+        y[i].className += " invalid";
+        valid = false;
+      }
     }
   }
   // If the valid status is true, mark the step as finished and valid:
