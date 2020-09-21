@@ -7,10 +7,9 @@
 html {
   height: 100%;
 }
+
 body {
   min-height: 100%;
-}
-body {
   background-color: #f2f7fb;
   display: flex;
   flex-direction: column;
@@ -25,15 +24,14 @@ button {
 .centered {
   background-color: #fff;
   box-shadow: 10px 10px 5px 0px rgba(215, 220, 223, 0.6);
-  min-width: 40%;
   min-width: 60%;
-  min-height: 90%;
+  min-height: 80%;
   border-radius: 1rem;
   overflow: hidden;
 }
 .maincontatiner {
   width: 95%;
-  height: 75vh;
+  height: 100%;
   background-color: #ffffff;
   display: flex;
 }
@@ -46,6 +44,10 @@ button {
   justify-content: center;
   flex-direction: column;
   margin: 1rem;
+}
+#bottom-dots {
+  text-align: center;
+  margin-top: 3.5rem;
 }
 @keyframes AnimateKey {
   0% {
@@ -214,6 +216,10 @@ input.invalid {
 }
 
 @media only screen and (max-width: 600px) {
+  #bottom-dots {
+    text-align: center;
+    margin-top: 2rem;
+  }
   @keyframes AnimateKey {
     0% {
       transform: scale(1, 1);
@@ -240,16 +246,21 @@ input.invalid {
     background-color: #f8d7da;
     border-color: #f5c6cb;
   }
+  html,
+  body {
+    min-height: 100%;
+  }
   .centered {
     background-color: #fff;
     box-shadow: 10px 10px 5px 0px rgba(215, 220, 223, 0.6);
-    width: 80%;
-    height: 75vh;
+    max-width: 80%;
+    min-height: 90%;
+
     border-radius: 1rem;
   }
   .maincontatiner {
     width: 100%;
-    height: 75vh;
+    height: 100%;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -273,15 +284,17 @@ input.invalid {
   }
 
   form {
+    /* height: 100%; */
     width: 100%;
   }
   .formContainer {
+    margin-top: 0.5rem;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 40%;
+    height: 100%;
   }
   .formContainer h1 {
     /* margin: 1rem; */
