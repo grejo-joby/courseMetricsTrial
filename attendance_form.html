@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CourseMetrics</title>
+    <title>CourseMetrics - Teacher</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -13,6 +13,8 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 
 </head>
 
@@ -27,13 +29,14 @@
             <a href=""><button><i class="fa fa-angle-right"></i> CRM</button></a>
             <a href=""><button><i class="fa fa-angle-right"></i> Analytics</button></a>
         </div> -->
-        <a href="#"><button class="sidenav-active-link"><i class="fa fa-tachometer"></i>Home</button></a>
+        <a href="index.html"><button class=""><i class="fa fa-tachometer"></i>Home</button></a>
         <h5>Student</h5>
         <a href="student.html"><button class=""><i class="fa fa-file"></i> Student Dashboard</button></a>
-        <a href="student_attendance.html"><button class=""><i class="fa fa-book"></i> Attendance</button></a>
+        <a href="student_attendance.html"><button class=""><i class="fa fa-book"></i>
+                Attendance</button></a>
         <h5>Teacher</h5>
-        <a href="attendance_form.html"><button class=""><i class="fa fa-paperclip"></i>
-            Attendance Form</button></a>
+        <a href="attendance_form.html"><button class="sidenav-active-link"><i class="fa fa-paperclip"></i>
+                Attendance Form</button></a>
         <button class=""><i class="fa fa-rocket"></i> Widget</button>
         <h5>UI Widgets</h5>
         <button class="dropdown-btn"><i class="fa fa-cube"></i>Basic<i class="fa fa-angle-down fa-lg"
@@ -88,74 +91,134 @@
                 <li><i class="fa fa-comment-o fa-lg"></i></li>
 
                 <li><i class="fa fa-user fa-lg"></i> Hayden Cordeiro</li>
-
-
-
-
-
             </ul>
 
 
         </div>
+
+
 
         <div class="content-area">
             <div class="flexContainer" id="dashboardLineContainer">
                 <div class="flex-40 dashboardLine">
                     <i class="fa fa-home fa-2x" style="float: left;" id="homeIcon"></i>
                     <div style="margin-bottom: 0;margin-top: 0;">
-                        <h3 style="margin-bottom: 0;margin-top: 2px;"><small>Dashboard</small> </h3>
-                        <p style="margin-bottom: 0;margin-top: 0;"><small>Lorem, ipsum dolor sit.</small> </p>
+                        <h3 style="margin-bottom: 0;margin-top: 2px;"><small>Teacher Dashboard</small> </h3>
+                        <p style="margin-bottom: 0;margin-top: 0;"><small>Class Attendance</small> </p>
                     </div>
 
                 </div>
                 <div class="flex-40-end">
                     <ul class="breadcrumb" style="float: right;">
                         <li><a href="#"><i class="fa fa-home"></i></a></li>
-                        <li><small>Dashboard</small></li>
+                        <li><small>Teacher</small></li>
                     </ul>
                 </div>
             </div>
+        </div>
 
-            <div class="flexContainer">
-                <div class="flex-50 chartCard card" style="flex: 0 0 30%;">
-                    <h4><strong>Deals Analytics</strong></h4>
-                    <div style="width: 95%;">
-                        <img src="chart.jpg" style="width:100%;">
-                    </div>
-                </div>
-                <div class="flex-50 chartCard card" style="flex: 0 0 30%;">
-                    <h4><strong>Sales Analytics</strong></h4>
-                    <div style="width: 95%;">
-                        <img src="chart.jpg" style="width:100%;">
-                    </div>
-                </div>
-                <div class="flex-40 verticalFlex" style="flex: 0 0 30%;">
-                    <div class="card verticalFlexItem" style="margin-bottom: 1.5%;">
-                        <h6>Impressions</h6>
-                        <h3 style="color: #4098FE;">1250</h3>
-                        <h5>May 2020 - June 2021</h5>
-                    </div>
-                    <div class="card verticalFlexItem" style="margin-bottom: 1%; margin-top:1%;">
-                        <h6>Sales</h6>
-                        <h3 style="color: #FF5370;">1250</h3>
-                        <h5>May 2020 - June 2021</h5>
-                    </div>
-                    <div class="card verticalFlexItem" style="margin-top: 1.5%;">
-                        <h6>Visitors</h6>
-                        <h3 style="color: #FFB64D;">1250</h3>
-                        <h5>May 2020 - June 2021</h5>
-                    </div>
+        <h2 style="margin: 1% 2.5% 1% 2.5%;">Update Attendance</h2>
 
+        <!-- <div style=""> -->
+        <div class="table_search">
+            <div>
+                <div class="dropdown">
+                    <button class="dropbtn">Year</button>
+                    <div class="dropdown-content">
+                        <a href="#">First Year</a>
+                        <a href="#">Second Year</a>
+                        <a href="#">Third Year</a>
+                        <a href="#">Fourth Year</a>
+                    </div>
                 </div>
             </div>
-
+            <div>
+                <div class="dropdown">
+                    <button class="dropbtn">Branch</button>
+                    <div class="dropdown-content">
+                        <a href="#">Computer</a>
+                        <a href="#">IT</a>
+                        <a href="#">EXTC</a>
+                        <a href="#">Mechanical</a>
+                    </div>
+                </div>
+            </div>
+            <div style="flex: 0 0 40%;">
+                <input type="text" id="search_box" placeholder="Search ..">
+            </div>
         </div>
+        <table class="attendance_form_table">
+            <thead>
+            <tr>
+                <th>Mark</th>
+                <th>Roll No.</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody id="attendance_form_table_data">
+            <tr>
+                <td><input type="checkbox" name="" id=""></td>
+                <td>1</td>
+                <td>Grejo Joby</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="" id=""></td>
+                <td>2</td>
+                <td>Hayden Cordeiro</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="" id=""></td>
+                <td>3</td>
+                <td>Manasi Anantpurkar</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="" id=""></td>
+                <td>4</td>
+                <td>Jivin Varghese</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="" id=""></td>
+                <td>5</td>
+                <td>Pakshal Ranawat</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="" id=""></td>
+                <td>6</td>
+                <td>John Doe</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="" id=""></td>
+                <td>7</td>
+                <td>John Foe</td>
+            </tr>
+        </tbody>
+        </table>
+        <!-- </div> -->
+        <br><br>
+
         <!-- Footer -->
         <div class="navbar" style="display: flex;justify-content: center;align-items: center; color: #A9A9A9;">
             <h4>Copyrights @ CourseMetrics 2020</h4>
         </div>
+
+    </div>
+
+
+
     </div>
     <script src="js/script.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+            $("#search_box").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#attendance_form_table_data tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
