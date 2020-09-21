@@ -18,10 +18,9 @@
 
 <body>
     <div id="mySidenav" class="sidenav">
-        <!--<a href="javascript:void(0)" class="closebtn"><i class="fa fa-times" onclick="closeNav()"></i></a>-->
         <h3 class="logo">CourseMatrics</h3>
         <h5>Navigation</h5>
-        <!-- <button class="dropdown-btn"><span><i class="fa fa-tachometer"></i> Home</span><span><i
+        <!-- <button class="dropdown-btn sidenav-active-link"><span><i class="fa fa-tachometer"></i> Dashboard</span><span><i
                     class="fa fa-angle-down fa-lg" style="float: right;"></i></span> </button>
         <div class="dropdown-container sidenav-active-set">
             <a href=""><button><i class="fa fa-angle-right"></i> Default</button></a>
@@ -29,8 +28,9 @@
             <a href=""><button><i class="fa fa-angle-right"></i> Analytics</button></a>
         </div> -->
         <a href="index.html"><button class=""><i class="fa fa-tachometer"></i>Home</button></a>
-        <a href="student.html"><button class=""><i class="fa fa-file"></i> Student Dashboard</button></a>        
-        <a href="student_attendance.html"><button class="sidenav-active-link"><i class="fa fa-book"></i> Attendance</button></a>
+        <a href="student.html"><button class=""><i class="fa fa-file"></i> Student Dashboard</button></a>
+        <a href="student_attendance.html"><button class="sidenav-active-link"><i class="fa fa-book"></i>
+                Attendance</button></a>
         <button class=""><i class="fa fa-location-arrow"></i> Navigation</button>
         <button class=""><i class="fa fa-rocket"></i> Widget</button>
         <h5>UI Widgets</h5>
@@ -61,16 +61,24 @@
             <a href=""><button><i class="fa fa-angle-right"></i>Square</button></a>
             <a href=""><button><i class="fa fa-angle-right"></i>Rectangle</button></a>
             <a href=""><button><i class="fa fa-angle-right"></i>Circle</button></a>
+
         </div>
+        <div>
+
+            <a href="javascipt:void(0)" class="closebtn">
+                <i class="fa fa-angle-left" onclick="toggle()"></i>
+            </a>
+        </div>
+
     </div>
     <div class="flexArea" id="flexArea">
         <div class="navbar">
             <ul>
-                <a href="javascript:void(0)" class="openbtn">
-                    <li><i class="fa fa-bars fa-lg" onclick="toggle()"></i></li>
+                <a href="javascipt:void(0)" class="openbtnhide">
+                    <li><i class="fa fa-bars fa-lg " onclick="toggle()"></i></li>
                 </a>
                 <a href="">
-                    <li class="right-float"><span><i class="fa fa-user fa-lg"></i></span> User Name</li>
+                    <li class="right-float"><span><i class="fa fa-user fa-lg"></i></span>User Name</li>
                 </a>
                 <a href="">
                     <li class="right-float"><i class="fa fa-bell fa-lg"></i></li>
@@ -82,6 +90,7 @@
 
 
         </div>
+
 
         <div class="content-area">
             <div class="flexContainer" id="dashboardLineContainer">
@@ -228,7 +237,7 @@
                 </tr>
             </table>
         </div>
-<br><br>
+        <br><br>
         <div style="overflow-x:auto;">
             <table id="attendanceTable2">
                 <tr class="firstRowAttTable">
@@ -295,12 +304,12 @@
         </div>
         <!-- Footer -->
         <div class="navbar" style="display: flex;justify-content: center;align-items: center; color: #A9A9A9;">
-            <h4 >Copyrights @ CourseMetrics 2020</h4>
-           </div>
+            <h4>Copyrights @ CourseMetrics 2020</h4>
+        </div>
 
     </div>
 
-    
+
 
     </div>
     <script src="js/script.js"></script>
