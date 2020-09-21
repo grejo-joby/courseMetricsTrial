@@ -144,9 +144,6 @@ button {
   padding-top: 10px;
   color: white;
 }
-
-.usernavhide {
-}
 .openbtn {
   display: block;
   color: #333;
@@ -341,7 +338,6 @@ ul.breadcrumb li a:hover {
   margin-left: 3%;
   margin-right: 3%;
   margin-top: 2%;
-  /* flex-wrap: wrap; */
 }
 .cardRow1.chart {
   background-color: #ffff;
@@ -377,13 +373,10 @@ ul.breadcrumb li a:hover {
     "footer footer footer";
   grid-gap: 10px;
   min-width: 200px;
-
-  /* padding: 10px; */
 }
 
 .profileLetter {
   padding: 10px;
-  /* background-color: #4099ff; */
   border-radius: 50%;
   text-align: center;
   color: #fff;
@@ -435,14 +428,11 @@ ul.breadcrumb li a:hover {
     box-shadow: 0px 7px 9px 1px rgba(224, 228, 231, 1);
     padding: 0.5rem;
     margin: 1rem;
-
     border-radius: 0.25rem;
     overflow: hidden;
-
     grid-area: header;
     display: flex;
     flex-direction: column;
-
     align-items: center;
   }
   canvas {
@@ -474,8 +464,6 @@ ul.breadcrumb li a:hover {
       "footer footer footer";
     margin: 0.5rem 0rem 0.5rem 0rem;
     min-width: 100%;
-
-    /* padding: 10px; */
   }
 
   .card4Table {
@@ -490,8 +478,6 @@ ul.breadcrumb li a:hover {
   border-spacing: 0;
   width: 94%;
   margin: auto;
-  /* border: 1px solid #ddd; */
-  /* margin: 0 2%; */
   text-align: center;
 }
 
@@ -500,7 +486,6 @@ td {
   text-align: left;
   padding: 8px;
   text-align: center;
-  /* border-bottom: 1px solid #ddd; */
 }
 
 #attendanceTable tr:hover {
@@ -519,8 +504,6 @@ td {
   border-spacing: 0;
   width: 94%;
   margin: auto;
-  /* border: 1px solid #ddd; */
-  /* margin: 0 2%; */
   background-color: #eee;
   text-align: center;
   font-weight: 900;
@@ -531,7 +514,6 @@ td {
   text-align: left;
   padding: 8px;
   text-align: center;
-  /* border-bottom: 1px solid #ddd; */
 }
 
 #attendanceTable2 tr:hover {
@@ -540,7 +522,6 @@ td {
 
 
 .attendance_form_table {
-  /* border-bottom: #333 1px solid; */
   border-top: 1px solid #dee2e6;
   margin: 2%;
   width: 97%;
@@ -615,9 +596,7 @@ td {
 }
 
 #search_box {
-  /* background-image: url('https://www.w3schools.com/css/searchicon.png'); */
-  /* background-position: 10px 10px; */
-  /* background-repeat: no-repeat; */
+
   width: 100%;
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
@@ -627,4 +606,13 @@ td {
   margin-bottom: 12px;
   background-color: rgba(0,0,0,0);
   outline: none;
+}
+
+#attendance_form_table_data tr>td> input:focus {
+  box-shadow: 0 0 0.15em 0.1em #4099ff;
+}
+
+
+#attendance_form_table_data tr>td> input {
+  zoom: 1.5;
 }
