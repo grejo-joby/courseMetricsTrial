@@ -222,12 +222,6 @@ h6 {
   box-shadow: 0px 7px 9px 1px rgba(224, 228, 231, 1);
 }
 
-.card4TableflexContainer {
-  background-color: #f2f7fb;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
 .card4Table {
   background-color: #fff;
   grid-template-areas:
@@ -429,28 +423,125 @@ ul.breadcrumb li a:hover {
   text-align: center;
 }
 
-.progress {
-  grid-area: main;
-  width: 90%;
-  height: 10px;
-  margin-top: 0.5rem;
-  border: 1px;
-  background-color: #e9ecef;
-  border-radius: 0.25rem;
-  margin-bottom: 5%;
-}
 .attendance-graph {
   min-width: 200px;
 }
+
+.singleAttendanceCard {
+  display: flex;
+  /* background-color: red; */
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  min-height: 4rem;
+  flex: 1 1 auto;
+}
+
+.card4TableflexContainer {
+  margin: 1rem;
+  padding: 1rem 0rem;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.25rem;
+  box-shadow: 0px 7px 9px 1px rgba(224, 228, 231, 1);
+
+  border: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+.cardforAttprog {
+  min-width: 48%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.cardforAttprog:nth-child(odd) .singleAttendanceCard {
+  padding-right: 1rem;
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+.cardforAttprog:nth-child(even) .singleAttendanceCard {
+  padding-left: 1rem;
+  /* border-right: 1px solid rgba(0, 0, 0, 0.3); */
+}
+.singleAttendanceCardrow1 {
+  min-width: 100%;
+  margin: 0px;
+  min-height: rem;
+  margin: 0rem 1rem;
+  /* background-color: khaki; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.singleAttendanceCard h4 {
+  font-size: large;
+}
+.cardforAttProgress {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+.progressDiv {
+  margin: 0.8rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.progress {
+  width: 96%;
+  height: 10px;
+  /* margin-top: 0.5rem; */
+  border: 1px;
+  background-color: #e9ecef;
+  border-radius: 0.25rem;
+}
+
 @media only screen and (max-device-width: 480px) {
   /* STYLES HERE for DEVICES with physical max-screen width of 480px */
-  .columnatt{
+  .columnatt {
     min-width: 100%;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .columnatt{
+  .progressDiv {
+    margin: 0.5rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cardforAttprog:nth-child(odd) .singleAttendanceCard {
+    /* padding-right: 0; */
+    border-right: none;
+  }
+  .cardforAttprog:nth-child(even) .singleAttendanceCard {
+    /* border-right: 1px solid rgba(0, 0, 0, 0.3); */
+  }
+  .singleAttendanceCard {
+    overflow: hidden;
+
+    padding: 0rem 1rem;
+    display: flex;
+    margin: 0rem 0.5rem;
+    /* background-color: red; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 4rem;
+    min-width: 80vw;
+    max-width: 80vw;
+  }
+
+  .singleAttendanceCard h4 {
+    font-size: 1.1em;
+  }
+  .columnatt {
     min-width: 100%;
   }
   .usernavhide {
@@ -595,7 +686,7 @@ td {
   min-width: 160px;
 }
 .dropinput {
-  font-family: 'Quicksand',sans-serif;
+  font-family: "Quicksand", sans-serif;
   /* background-color: #4099ff; */
   color: black;
   padding: 16px;
@@ -667,10 +758,9 @@ td {
   /* padding: 12px 15px 12px 15px; */
   border: 1px solid #ddd;
   /* margin-bottom: 12px; */
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
   outline: none;
   border-radius: 5px;
-
 }
 
 #attendance_form_table_data tr > td > input:focus {
@@ -680,7 +770,6 @@ td {
 #attendance_form_table_data tr > td > input {
   zoom: 1.5;
 }
-
 
 .columnatt {
   float: left;
@@ -709,7 +798,7 @@ td {
 
 .btn-success {
   background-color: #2ed8b6 !important;
-    border-color: #2ed8b6 !important;
+  border-color: #2ed8b6 !important;
 }
 
 .btn-success:hover {
@@ -717,8 +806,8 @@ td {
   border-color: #59e0c5 !important;
 }
 .btn-danger {
-  background-color: #FF5370 !important;
-  border-color: #FF5370 !important;
+  background-color: #ff5370 !important;
+  border-color: #ff5370 !important;
 }
 
 .btn-danger:hover {
@@ -729,7 +818,6 @@ td {
 .table_inside_row {
   display: flex;
   vertical-align: middle;
-
 }
 
 .table_inside_row > div {
