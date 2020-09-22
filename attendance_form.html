@@ -120,10 +120,12 @@
         <h2 style="margin: 1% 2.5% 1% 2.5%;">Update Attendance</h2>
 
         <!-- <div style=""> -->
-        <div class="table_search">
+        <div class="table_search cardRow1 tablecard" style="justify-content: flex-start;">
+
             <div>
                 <div class="dropdown">
-                    <button class="dropbtn">Year</button>
+                    <button class="dropbtn">Year<i class="fa fa-caret-down" aria-hidden="true"
+                            style="margin-left: 10px;"></i></button>
                     <div class="dropdown-content">
                         <a href="#">First Year</a>
                         <a href="#">Second Year</a>
@@ -134,7 +136,8 @@
             </div>
             <div>
                 <div class="dropdown">
-                    <button class="dropbtn">Branch</button>
+                    <button class="dropbtn">Branch<i class="fa fa-caret-down" aria-hidden="true"
+                            style="margin-left: 10px;"></i></button>
                     <div class="dropdown-content">
                         <a href="#">Computer</a>
                         <a href="#">IT</a>
@@ -143,56 +146,99 @@
                     </div>
                 </div>
             </div>
-            <div style="flex: 0 0 40%;">
-                <input type="text" id="search_box" placeholder="Search ..">
+            <div>
+                <div class="dropdown">
+                    <input type="date" name="" id="" class="dropinput" style="outline: none;">
+                    <!-- <button class="dropbtn">Date</button> -->
+                    <!-- <div class="dropdown-content"> -->
+                    <!-- <a href="#">First Year</a> -->
+                    <!-- <a href="#">Second Year</a> -->
+                    <!-- <a href="#">Third Year</a> -->
+                    <!-- <a href="#">Fourth Year</a> -->
+                </div>
             </div>
+            <div>
+                <div class="dropdown">
+                    <input type="time" name="" id="" class="dropinput" style="outline: none;">
+                </div>
+            </div>
+            <!-- <div style="flex: 0 0 40%;margin-right: 3%;margin-top:2%;">
+                <input type="text" id="search_box" placeholder="Search ..">
+            </div> -->
+            <!-- <div>
+                <div class="dropdown">
+                    <button class="dropbtn btn-success">Present</button>
+                </div>
+            </div>
+            <div>
+                <div class="dropdown">
+                    <button class="dropbtn btn-danger">Absent</button>
+                </div>
+            </div> -->
         </div>
-        <table class="attendance_form_table">
-            <thead>
-            <tr>
-                <th>Mark</th>
-                <th>Roll No.</th>
-                <th>Name</th>
-            </tr>
-        </thead>
-        <tbody id="attendance_form_table_data">
-            <tr>
-                <td><input type="checkbox" name="" id=""></td>
-                <td>1</td>
-                <td>Grejo Joby</td>
-            </tr>
-            <tr>
-                <td><input type="checkbox" name="" id=""></td>
-                <td>2</td>
-                <td>Hayden Cordeiro</td>
-            </tr>
-            <tr>
-                <td><input type="checkbox" name="" id=""></td>
-                <td>3</td>
-                <td>Manasi Anantpurkar</td>
-            </tr>
-            <tr>
-                <td><input type="checkbox" name="" id=""></td>
-                <td>4</td>
-                <td>Jivin Varghese</td>
-            </tr>
-            <tr>
-                <td><input type="checkbox" name="" id=""></td>
-                <td>5</td>
-                <td>Pakshal Ranawat</td>
-            </tr>
-            <tr>
-                <td><input type="checkbox" name="" id=""></td>
-                <td>6</td>
-                <td>John Doe</td>
-            </tr>
-            <tr>
-                <td><input type="checkbox" name="" id=""></td>
-                <td>7</td>
-                <td>John Foe</td>
-            </tr>
-        </tbody>
-        </table>
+        <div class="cardRow2 tablecard">
+            <div style="display: flex;flex-wrap: wrap;" class="table_inside_row">
+                <div style="flex:0 0 60%;flex-grow: 3;">
+                    <input type="text" id="search_box" placeholder="Search .." style="margin: 1%;width: 95%;">
+                </div>
+                <div style="margin-top: 1.5%;">
+                    <div class="dropdown">
+                        <button class="dropbtn btn-success">Present</button>
+                    </div>
+                </div>
+                <div style="margin-top: 1.5%;">
+                    <div class="dropdown">
+                        <button class="dropbtn btn-danger">Absent</button>
+                    </div>
+                </div>
+            </div>
+            <table class="attendance_form_table">
+                <thead>
+                    <tr>
+                        <th>Mark</th>
+                        <th>Roll No.</th>
+                        <th>Name</th>
+                    </tr>
+                </thead>
+                <tbody id="attendance_form_table_data">
+                    <tr>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td>1</td>
+                        <td>Grejo Joby</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td>2</td>
+                        <td>Hayden Cordeiro</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td>3</td>
+                        <td>Manasi Anantpurkar</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td>4</td>
+                        <td>Jivin Varghese</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td>5</td>
+                        <td>Pakshal Ranawat</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td>6</td>
+                        <td>John Doe</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td>7</td>
+                        <td>John Foe</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
         <!-- </div> -->
         <br><br>
 
