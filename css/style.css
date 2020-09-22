@@ -437,12 +437,22 @@ ul.breadcrumb li a:hover {
   border: 1px;
   background-color: #e9ecef;
   border-radius: 0.25rem;
+  margin-bottom: 5%;
 }
 .attendance-graph {
   min-width: 200px;
 }
+@media only screen and (max-device-width: 480px) {
+  /* STYLES HERE for DEVICES with physical max-screen width of 480px */
+  .columnatt{
+    min-width: 100%;
+  }
+}
 
 @media only screen and (max-width: 600px) {
+  .columnatt{
+    min-width: 100%;
+  }
   .usernavhide {
     display: none !important;
   }
@@ -557,7 +567,6 @@ td {
   background-color: #f2f7fb;
 }
 
-
 .attendance_form_table {
   border-top: 1px solid #dee2e6;
   margin: 2%;
@@ -565,16 +574,15 @@ td {
   border-collapse: collapse;
 }
 
-.attendance_form_table th,td {
+.attendance_form_table th,
+td {
   border-bottom: 1px solid #dee2e6;
   padding: 1% 0;
 }
 
 .attendance_form_table tr:hover {
-  background-color: rgba(64,153,255,0.1);
-
+  background-color: rgba(64, 153, 255, 0.1);
 }
-
 
 .dropbtn {
   background-color: #4099ff;
@@ -609,7 +617,7 @@ td {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   border-radius: 10px;
 }
@@ -621,7 +629,9 @@ td {
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -649,7 +659,6 @@ td {
 }
 
 #search_box {
-
   width: 100%;
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
@@ -664,14 +673,40 @@ td {
 
 }
 
-#attendance_form_table_data tr>td> input:focus {
+#attendance_form_table_data tr > td > input:focus {
   box-shadow: 0 0 0.15em 0.1em #4099ff;
 }
 
-
-#attendance_form_table_data tr>td> input {
+#attendance_form_table_data tr > td > input {
   zoom: 1.5;
 }
+
+
+.columnatt {
+  float: left;
+  width: 50%;
+}
+.rowatt:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.cardforAtt {
+  background-color: #fff;
+  grid-template-areas:
+    "header header header"
+    "main main main "
+    "footer footer footer";
+  margin: 1rem;
+  min-height: 120px;
+  width: 100%;
+  min-width: 500px;
+  border-radius: 0.25rem;
+
+  box-shadow: 0px 7px 9px 1px rgba(224, 228, 231, 1);
+}
+
 .btn-success {
   background-color: #2ed8b6 !important;
     border-color: #2ed8b6 !important;
@@ -699,5 +734,4 @@ td {
 
 .table_inside_row > div {
   margin: 1%;
-  
 }
