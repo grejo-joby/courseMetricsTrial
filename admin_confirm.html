@@ -35,12 +35,12 @@
         <a href="student_attendance.html"><button class=""><i class="fa fa-book"></i>
                 Attendance</button></a>
         <h5>Teacher</h5>
-        <a href="attendance_form.html"><button class="sidenav-active-link"><i class="fa fa-paperclip"></i>
+        <a href="attendance_form.html"><button class=""><i class="fa fa-paperclip"></i>
                 Attendance Form</button></a>
         <a href="teachers_marks.html"><button class=""><i class=" fa fa-line-chart"></i>
                     Marks Analysis</button></a>
         <h5>Admin</h5>
-        <a href="admin_confirm.html"><button class=""><i class="fa fa-paperclip"></i>
+        <a href="admin_confirm.html"><button class="sidenav-active-link"><i class="fa fa-paperclip"></i>
             Student Confirmation</button></a>
         <!--<button class=""><i class="fa fa-rocket"></i> Widget</button>
         <h5>UI Widgets</h5>
@@ -108,21 +108,21 @@
                 <div class="flex-40 dashboardLine">
                     <i class="fa fa-home fa-2x" style="float: left;" id="homeIcon"></i>
                     <div style="margin-bottom: 0;margin-top: 0;">
-                        <h3 style="margin-bottom: 0;margin-top: 2px;"><small>Teacher Dashboard</small> </h3>
-                        <p style="margin-bottom: 0;margin-top: 0;"><small>Class Attendance</small> </p>
+                        <h3 style="margin-bottom: 0;margin-top: 2px;"><small>Admin Dashboard</small> </h3>
+                        <p style="margin-bottom: 0;margin-top: 0;"><small>Confirm Applications</small> </p>
                     </div>
 
                 </div>
                 <div class="flex-40-end">
                     <ul class="breadcrumb" style="float: right;">
                         <li><a href="#"><i class="fa fa-home"></i></a></li>
-                        <li><small>Teacher</small></li>
+                        <li><small>Admin</small></li>
                     </ul>
                 </div>
             </div>
         </div>
 
-        <h2 style="margin: 1% 2.5% 1% 2.5%;">Update Attendance</h2>
+        <h2 style="margin: 1% 2.5% 1% 2.5%;">Confirm Admission</h2>
 
         <!-- <div style=""> -->
         <div class="table_search cardRow1 tablecard" style="justify-content: flex-start;">
@@ -151,52 +151,6 @@
                     </div>
                 </div>
             </div>
-            <div>
-                <div class="dropdown">
-                    <button class="dropbtn">Subject<i class="fa fa-caret-down" aria-hidden="true"
-                            style="margin-left: 10px;"></i></button>
-                    <div class="dropdown-content">
-                        <a href="#">MP</a>
-                        <a href="#">CN</a>
-                        <a href="#">TCS</a>
-                        <a href="#">AA</a>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="dropdown">
-                    <input type="date" name="" id="" class="dropinput" style="outline: none;">
-                    <!-- <button class="dropbtn">Date</button> -->
-                    <!-- <div class="dropdown-content"> -->
-                    <!-- <a href="#">First Year</a> -->
-                    <!-- <a href="#">Second Year</a> -->
-                    <!-- <a href="#">Third Year</a> -->
-                    <!-- <a href="#">Fourth Year</a> -->
-                </div>
-            </div>
-            <div>
-                <div class="dropdown">
-                    <input type="time" name="" id="" class="dropinput" style="outline: none;" placeholder="From">
-                </div>
-            </div>
-            <div>
-                <div class="dropdown">
-                    <input type="time" name="" id="" class="dropinput" style="outline: none;" placeholder="To">
-                </div>
-            </div>
-            <!-- <div style="flex: 0 0 40%;margin-right: 3%;margin-top:2%;">
-                <input type="text" id="search_box" placeholder="Search ..">
-            </div> -->
-            <!-- <div>
-                <div class="dropdown">
-                    <button class="dropbtn btn-success">Present</button>
-                </div>
-            </div>
-            <div>
-                <div class="dropdown">
-                    <button class="dropbtn btn-danger">Absent</button>
-                </div>
-            </div> -->
         </div>
         <div class="cardRow2 tablecard">
             <div style="display: flex;flex-wrap: wrap;" class="table_inside_row">
@@ -205,20 +159,21 @@
                 </div>
                 <div style="margin-top: 1.5%;">
                     <div class="dropdown">
-                        <button class="dropbtn btn-success">Present</button>
+                        <button class="dropbtn btn-success">Admit</button>
                     </div>
                 </div>
                 <div style="margin-top: 1.5%;">
                     <div class="dropdown">
-                        <button class="dropbtn btn-danger">Absent</button>
+                        <button class="dropbtn btn-danger">Remove</button>
                     </div>
                 </div>
             </div>
             <table class="attendance_form_table">
                 <thead>
                     <tr>
-                        <th>Mark</th>
+                        <th>Admit</th>
                         <th>Roll No.</th>
+                        <th>Student ID</th>                        
                         <th>Name</th>
                     </tr>
                 </thead>
@@ -226,36 +181,43 @@
                     <tr>
                         <td><input type="checkbox" name="" id=""></td>
                         <td>1</td>
+                        <td>218120120120</td>
                         <td>Grejo Joby</td>
                     </tr>
                     <tr>
                         <td><input type="checkbox" name="" id=""></td>
                         <td>2</td>
+                        <td>218120120121</td>
                         <td>Hayden Cordeiro</td>
                     </tr>
                     <tr>
                         <td><input type="checkbox" name="" id=""></td>
                         <td>3</td>
+                        <td>218120120122</td>
                         <td>Manasi Anantpurkar</td>
                     </tr>
                     <tr>
                         <td><input type="checkbox" name="" id=""></td>
                         <td>4</td>
+                        <td>218120120123</td>
                         <td>Jivin Varghese</td>
                     </tr>
                     <tr>
                         <td><input type="checkbox" name="" id=""></td>
                         <td>5</td>
+                        <td>218120120124</td>
                         <td>Pakshal Ranawat</td>
                     </tr>
                     <tr>
                         <td><input type="checkbox" name="" id=""></td>
                         <td>6</td>
+                        <td>218120120125</td>
                         <td>John Doe</td>
                     </tr>
                     <tr>
                         <td><input type="checkbox" name="" id=""></td>
                         <td>7</td>
+                        <td>218120120126</td>
                         <td>John Foe</td>
                     </tr>
                 </tbody>
