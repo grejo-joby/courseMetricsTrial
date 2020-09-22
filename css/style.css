@@ -188,7 +188,9 @@ button {
 .verticalFlexItem {
   flex: 0 0 10% !important;
 }
-
+.verticalFlexItem2 {
+  flex: 0 0 48% !important;
+}
 .verticalFlexItem h1,
 h2,
 h3,
