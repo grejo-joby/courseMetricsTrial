@@ -405,6 +405,12 @@ ul.breadcrumb li a:hover {
 .attendance-graph {
   min-width: 200px;
 }
+@media only screen and (max-device-width: 480px) {
+  /* STYLES HERE for DEVICES with physical max-screen width of 480px */
+  .columnatt{
+    min-width: 100%;
+  }
+}
 
 @media only screen and (max-width: 600px) {
   .columnatt{
