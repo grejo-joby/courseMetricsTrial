@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CourseMetrics - Student</title>
+    <title>CourseMetrics</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -13,20 +13,6 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-        <style>
-            table {
-                border-collapse: collapse;
-                width: 100%;
-            }
-
-            th, td {
-                padding: 15px;
-                text-align: left;
-                border-bottom: 1px solid #ddd;
-            }
-
-            tr:hover {background-color:#f5f5f5;}
-            </style>
 
 </head>
 
@@ -41,51 +27,45 @@
             <a href=""><button><i class="fa fa-angle-right"></i> CRM</button></a>
             <a href=""><button><i class="fa fa-angle-right"></i> Analytics</button></a>
         </div> -->
-        <a href="index.html"><button><i class="fa fa-tachometer"></i>Home</button></a>
+        <a href="#"><button class="sidenav-active-link"><i class="fa fa-tachometer"></i>Home</button></a>
         <h5>Student</h5>
-        <a href="student.html" class=""><button class=""><i class="fa fa-file"></i> Student
-                Dashboard</button></a>
+        <a href="student.html"><button class=""><i class="fa fa-file"></i> Student Dashboard</button></a>
         <a href="student_attendance.html"><button class=""><i class="fa fa-book"></i> Attendance</button></a>
         <h5>Teacher</h5>
-        <a href="attendance_form.html"><button class=""><i class="fa fa-paperclip"></i>
-            Attendance Form</button></a>
-            <a href="teachers_marks.html"><button class="sidenav-active-link"><i class=" fa fa-line-chart"></i>
+        <a href="teachers_marks.html"><button class=""><i class=" fa fa-line-chart"></i>
                 Marks Analysis</button></a>
-                <h5>Admin</h5>
-                <a href="admin_confirm.html"><button class=""><i class="fa fa-paperclip"></i>
-                    Student Confirmation</button></a>
         <!--
-        <button class=""><i class="fa fa-rocket"></i> Widget</button>
-        <h5>UI Widgets</h5>
-        <button class="dropdown-btn"><i class="fa fa-cube"></i>Basic<i class="fa fa-angle-down fa-lg"
-                style="float: right;"></i></button>
-        <div class="dropdown-container">
-            <a href=""><button><i class="fa fa-angle-right"></i>Square</button></a>
-            <a href=""><button><i class="fa fa-angle-right"></i>Rectangle</button></a>
-            <a href=""><button><i class="fa fa-angle-right"></i>Circle</button></a>
-        </div>
-        <button class="dropdown-btn"><i class="fa fa-paint-brush"></i>Advanced<i class="fa fa-angle-down fa-lg"
-                style="float: right;"></i></button>
-        <div class="dropdown-container">
-            <a href=""><button><i class="fa fa-angle-right"></i>Square</button></a>
-            <a href=""><button><i class="fa fa-angle-right"></i>Rectangle</button></a>
-            <a href=""><button><i class="fa fa-angle-right"></i>Circle</button></a>
-        </div>
-        <button class="dropdown-btn"><i class="fa fa-puzzle-piece"></i>Extra<i class="fa fa-angle-down fa-lg"
-                style="float: right;"></i></button>
-        <div class="dropdown-container">
-            <a href=""><button><i class="fa fa-angle-right"></i>Square</button></a>
-            <a href=""><button><i class="fa fa-angle-right"></i>Rectangle</button></a>
-            <a href=""><button><i class="fa fa-angle-right"></i>Circle</button></a>
-        </div>
-        <button class="dropdown-btn"><i class="fa fa-video-camera"></i>Animations<i class="fa fa-angle-down fa-lg"
-                style="float: right;"></i></button>
-        <div class="dropdown-container">
-            <a href=""><button><i class="fa fa-angle-right"></i>Square</button></a>
-            <a href=""><button><i class="fa fa-angle-right"></i>Rectangle</button></a>
-            <a href=""><button><i class="fa fa-angle-right"></i>Circle</button></a>
+    <button class=""><i class="fa fa-rocket"></i> Widget</button>
+    <h5>UI Widgets</h5>
+    <button class="dropdown-btn"><i class="fa fa-cube"></i>Basic<i class="fa fa-angle-down fa-lg"
+            style="float: right;"></i></button>
+    <div class="dropdown-container">
+        <a href=""><button><i class="fa fa-angle-right"></i>Square</button></a>
+        <a href=""><button><i class="fa fa-angle-right"></i>Rectangle</button></a>
+        <a href=""><button><i class="fa fa-angle-right"></i>Circle</button></a>
+    </div>
+    <button class="dropdown-btn"><i class="fa fa-paint-brush"></i>Advanced<i class="fa fa-angle-down fa-lg"
+            style="float: right;"></i></button>
+    <div class="dropdown-container">
+        <a href=""><button><i class="fa fa-angle-right"></i>Square</button></a>
+        <a href=""><button><i class="fa fa-angle-right"></i>Rectangle</button></a>
+        <a href=""><button><i class="fa fa-angle-right"></i>Circle</button></a>
+    </div>
+    <button class="dropdown-btn"><i class="fa fa-puzzle-piece"></i>Extra<i class="fa fa-angle-down fa-lg"
+            style="float: right;"></i></button>
+    <div class="dropdown-container">
+        <a href=""><button><i class="fa fa-angle-right"></i>Square</button></a>
+        <a href=""><button><i class="fa fa-angle-right"></i>Rectangle</button></a>
+        <a href=""><button><i class="fa fa-angle-right"></i>Circle</button></a>
+    </div>
+    <button class="dropdown-btn"><i class="fa fa-video-camera"></i>Animations<i class="fa fa-angle-down fa-lg"
+            style="float: right;"></i></button>
+    <div class="dropdown-container">
+        <a href=""><button><i class="fa fa-angle-right"></i>Square</button></a>
+        <a href=""><button><i class="fa fa-angle-right"></i>Rectangle</button></a>
+        <a href=""><button><i class="fa fa-angle-right"></i>Circle</button></a>
 
-        </div>-->
+    </div>-->
         <div>
 
             <a href="javascipt:void(0)" class="closebtn">
@@ -109,7 +89,14 @@
                 <li><i class="fa fa-comment-o fa-lg"></i></li>
 
                 <li><i class="fa fa-user fa-lg"></i> Hayden Cordeiro</li>
+
+
+
+
+
             </ul>
+
+
         </div>
 
         <div class="content-area">
@@ -131,7 +118,7 @@
             </div>
 
 
-            <div class="table_search cardRow1 tablecard" style="justify-content: flex-start;">
+            <div class="table_search cardRow1 tablecard" style="width:100%;justify-content: flex-start;">
 
                 <div>
                     <div class="dropdown">
@@ -190,226 +177,206 @@
                     </div>
                 </div>
             </div>
-            
+
             <h2 style="margin: 1% 2.5% 0 2.5%;">Marks Analysis</h2>
+
             <div class="flexContainer">
-                <div class="flex-50 chartCard card" style="flex: 0 0 30%;">
-                <h4><strong>Class Performance</strong></h4>
-                <div style="width: 95%;">
-                    <div style="flex: 0 0 50%; height:40vh; width:100% ; flex-wrap: wrap;">
-                        <canvas id="markschart"></canvas>
+                <div class="flex-50 chartCard card" style="min-width:20%;max-width:30%;padding:0px">
+                    <h4> <strong>Class Performance</strong></h4>
+                    <div class="chartStyle">
+                        <canvas id="markschart" style="width:100%;"></canvas>
                     </div>
                 </div>
+                <div class="flex-50 chartCard card" style="min-width:20%;max-width:30%;">
+                    <h4><strong>Sales Analytics</strong></h4>
+                    <div style="width: 95%;height: 95%;">
+
+
+                    </div>
                 </div>
-                <div class="flex-50 verticalFlex" style="flex: 0 0 30%;">
-                <div class="card verticalFlexItem2" style="margin-bottom: 1.5%;">
-                    <h3 style="color: #FFB64D;">Maximum Marks</h3>
-                    <h4>Athira Lonapan</h4>
-                    <h4>Grejo Joby</h4>
-                </div>
-                <div class="card verticalFlexItem2" style="margin-bottom: 1%; margin-top:1%;">
-                    <h3 style="color: #FF5370;">Minimum Marks</h3>
-                    <h4>Athira Lonapan</h4>
-                    <h4>Grejo Joby</h4>
-                </div>
-                </div>
-                <div class="flex-40 verticalFlex" style="flex: 0 0 30%;">
-                <div class="card verticalFlexItem" style="margin-bottom: 1.5%;">
-                    <h6>Maximum Marks</h6>
-                    <h3 style="color: #4098FE;">20</h3>
-                    <h5>2 students</h5>
-                </div>
-                <div class="card verticalFlexItem" style="margin-bottom: 1%; margin-top:1%;">
-                    <h6>Average Marks</h6>
-                    <h3 style="color: #FF5370;">13</h3>
-                    <h5>12 students</h5>
-                </div>
-                <div class="card verticalFlexItem" style="margin-top: 1.5%;">
-                    <h6>Minimum Marks</h6>
-                    <h3 style="color: #FFB64D;">0</h3>
-                    <h5>3 students</h5>
-                </div>
+                <div class="flex-40 verticalFlex" style="min-width:20%;max-width:30%;">
+                    <div class="card verticalFlexItem" style="margin-bottom: 1.5%;">
+                        <h6>Impressions</h6>
+                        <h3 style="color: #4098FE;">1250</h3>
+                        <h5>May 2020 - June 2021</h5>
+                    </div>
+                    <div class="card verticalFlexItem" style="margin-bottom: 1%; margin-top:1%;">
+                        <h6>Sales</h6>
+                        <h3 style="color: #FF5370;">1250</h3>
+                        <h5>May 2020 - June 2021</h5>
+                    </div>
+                    <div class="card verticalFlexItem" style="margin-top: 1.5%;">
+                        <h6>Visitors</h6>
+                        <h3 style="color: #FFB64D;">1250</h3>
+                        <h5>May 2020 - June 2021</h5>
+                    </div>
+
                 </div>
             </div>
-            
-        </div>
-        <div class="content-area">
+
             <h2 style="margin: 1% 2.5% 0 2.5%;">Attendance Analysis</h2>
 
             <div class="flexContainer">
-                <div class="flex-40 verticalFlex" style="flex: 0 0 30%;">
+                <div class="flex-50 chartCard card" style="min-width:20%;max-width:30%;padding:0px" id="lastChart">
+                    <h4> <strong>Class Attendance</strong></h4>
+                    <div class="chartStyle">
+                        <canvas id="attchart" style="width:100%;"></canvas>
+                    </div>
+                </div>
+                <div class="flex-50 chartCard card" style="min-width:20%;max-width:30%;order: 2;">
+                    <h4><strong>Sales Analytics</strong></h4>
+                    <div style="width: 95%;height: 95%;">
+
+
+                    </div>
+                </div>
+                <div class="flex-40 verticalFlex" style="min-width:20%;max-width:30%;">
                     <div class="card verticalFlexItem" style="margin-bottom: 1.5%;">
-                        <h6>Maximum Attendance</h6>
-                        <h3 style="color: #4098FE;">100</h3>
-                        <h5>19 students</h5>
+                        <h6>Impressions</h6>
+                        <h3 style="color: #4098FE;">1250</h3>
+                        <h5>May 2020 - June 2021</h5>
                     </div>
                     <div class="card verticalFlexItem" style="margin-bottom: 1%; margin-top:1%;">
-                        <h6>Average Attendance</h6>
-                        <h3 style="color: #FF5370;">71</h3>
-                        <h5>24 students</h5>
+                        <h6>Sales</h6>
+                        <h3 style="color: #FF5370;">1250</h3>
+                        <h5>May 2020 - June 2021</h5>
                     </div>
                     <div class="card verticalFlexItem" style="margin-top: 1.5%;">
-                        <h6>Minimum Attendance</h6>
-                        <h3 style="color: #FFB64D;">30</h3>
-                        <h5>2 students</h5>
+                        <h6>Visitors</h6>
+                        <h3 style="color: #FFB64D;">1250</h3>
+                        <h5>May 2020 - June 2021</h5>
                     </div>
-    
-                    </div>
-                <div class="flex-50 verticalFlex" style="flex: 0 0 30%;">
-                    <div class="card verticalFlexItem2" style="margin-bottom: 1.5%;">
-                        <h3 style="color: #FFB64D;">Maximum Attendance</h3>
-                        <h4>Athira Lonapan</h4>
-                        <h4>Grejo Joby</h4>
-                    </div>
-                    <div class="card verticalFlexItem2" style="margin-bottom: 1%; margin-top:1%;">
-                        <h3 style="color: #FF5370;">Minimum Attendance</h3>
-                        <h4>Athira Lonapan</h4>
-                        <h4>Grejo Joby</h4>
-                    </div>
+
                 </div>
-                <div class="flex-50 chartCard card" style="flex: 0 0 30%;">
-                <h4><strong>Class Attendance</strong></h4>
-                <div style="width: 95%;">
-                    <div style="flex: 0 0 50%; height:40vh; width:100% ; flex-wrap: wrap;">
-                        <canvas id="attchart"></canvas>
-                    </div>
-                </div>
-                </div>
-                
-                
             </div>
+
         </div>
-
-
-           
         <!-- Footer -->
-        <div class="navbar" style="display: flex;justify-content: center;align-items: center; color: #A9A9A9; margin-top: 5px;">
+        <div class="navbar" style="display: flex;justify-content: center;align-items: center; color: #A9A9A9;">
             <h4>Copyrights @ CourseMetrics 2020</h4>
         </div>
-
     </div>
     <script src="js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-    <script>
-        var canvas = document.getElementById("markschart");
-        var ctx = canvas.getContext('2d');
-
-        // Global Options:
-        Chart.defaults.global.defaultFontColor = 'black';
-        Chart.defaults.global.defaultFontSize = 16;
-
-        var data = {
-            labels: ["0-8", "9-12", "13-17", "18-20"],
-            datasets: [
-                {
-                    fill: true,
-                    backgroundColor: [
-                        "#4098FE",
-                        "#FF5370",
-                        "#FFB64D",
-                        "#2ED8B6",
-                    ],
-                    /*backgroundColor: [
-                        "#2ecc71",
-                        "#3498db",
-                        "#95a5a6",
-                        "#9b59b6",
-                        "#f1c40f",
-                    ],*/
-                    /*backgroundColor: [ //Alternative colours
-                        '#FFF1C9',
-                        '#F7B7A3',
-                        '#EA5F89',
-                        '#9B3192',
-                        '#57167E'
-                    ],*/
-                    data: [10, 10, 20, 30],
-                    borderWidth: [2, 2, 2, 2]
-                }
-            ]
-        };
-
-        // Notice the rotation from the documentation.
-
-        var options = {
-            title: {
-                display: true,
-                position: 'top',
-                
-            },
-            responsive: true,
-            maintainAspectRatio: false,
-            label: { responsive: true, }
-        };
-
-
-        // Chart declaration:
-        var myBarChart = new Chart(ctx, {
-            type: 'pie',
-            data: data,
-            options: options
-        });
-
-        var canvasatt = document.getElementById("attchart");
-        var ctxatt = canvasatt.getContext('2d');
-
-        // Global Options:
-        Chart.defaults.global.defaultFontColor = 'black';
-        Chart.defaults.global.defaultFontSize = 16;
-
-        var dataatt = {
-            labels: ["Below 50%", "51%-75%", "76% and above"],
-            datasets: [
-                {
-                    fill: true,
-                    backgroundColor: [
-                        "#4098FE",
-                        "#FF5370",
-                        "#FFB64D",
-                    ],
-                    /*backgroundColor: [
-                        "#2ecc71",
-                        "#3498db",
-                        "#95a5a6",
-                        "#9b59b6",
-                        "#f1c40f",
-                    ],*/
-                    /*backgroundColor: [ //Alternative colours
-                        '#FFF1C9',
-                        '#F7B7A3',
-                        '#EA5F89',
-                        '#9B3192',
-                        '#57167E'
-                    ],*/
-                    data: [20,40,30],
-                    borderWidth: [2, 2, 2, 2]
-                }
-            ]
-        };
-
-        // Notice the rotation from the documentation.
-
-        var optionsatt = {
-            title: {
-                display: true,
-                position: 'top',
-                
-            },
-            responsive: true,
-            maintainAspectRatio: false,
-            label: { responsive: true, }
-        };
-
-
-        // Chart declaration:
-        var myBarChartatt = new Chart(ctxatt, {
-            type: 'pie',
-            data: dataatt,
-            options: optionsatt
-        });
-
-    </script>
-    
 </body>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<script>
+    var canvas = document.getElementById("markschart");
+    var ctx = canvas.getContext('2d');
+
+    // Global Options:
+    Chart.defaults.global.defaultFontColor = 'black';
+    Chart.defaults.global.defaultFontSize = 16;
+
+    var data = {
+        labels: ["0-8", "9-12", "13-17", "18-20"],
+        datasets: [
+            {
+                fill: true,
+                backgroundColor: [
+                    "#4098FE",
+                    "#FF5370",
+                    "#FFB64D",
+                    "#2ED8B6",
+                ],
+                /*backgroundColor: [
+                    "#2ecc71",
+                    "#3498db",
+                    "#95a5a6",
+                    "#9b59b6",
+                    "#f1c40f",
+                ],*/
+                /*backgroundColor: [ //Alternative colours
+                    '#FFF1C9',
+                    '#F7B7A3',
+                    '#EA5F89',
+                    '#9B3192',
+                    '#57167E'
+                ],*/
+                data: [10, 10, 20, 30],
+                borderWidth: [2, 2, 2, 2]
+            }
+        ]
+    };
+
+    // Notice the rotation from the documentation.
+
+    var options = {
+        title: {
+            display: true,
+            position: 'top',
+
+        },
+        responsive: true,
+        maintainAspectRatio: false,
+        label: { responsive: true, }
+    };
+
+
+    // Chart declaration:
+    var myBarChart = new Chart(ctx, {
+        type: 'pie',
+        data: data,
+        options: options
+    });
+
+    var canvasatt = document.getElementById("attchart");
+    var ctxatt = canvasatt.getContext('2d');
+
+    // Global Options:
+    Chart.defaults.global.defaultFontColor = 'black';
+    Chart.defaults.global.defaultFontSize = 16;
+
+    var dataatt = {
+        labels: ["Below 50%", "51%-75%", "76% and above"],
+        datasets: [
+            {
+                fill: true,
+                backgroundColor: [
+                    "#4098FE",
+                    "#FF5370",
+                    "#FFB64D",
+                ],
+                /*backgroundColor: [
+                    "#2ecc71",
+                    "#3498db",
+                    "#95a5a6",
+                    "#9b59b6",
+                    "#f1c40f",
+                ],*/
+                /*backgroundColor: [ //Alternative colours
+                    '#FFF1C9',
+                    '#F7B7A3',
+                    '#EA5F89',
+                    '#9B3192',
+                    '#57167E'
+                ],*/
+                data: [20, 40, 30],
+                borderWidth: [2, 2, 2, 2]
+            }
+        ]
+    };
+
+    // Notice the rotation from the documentation.
+
+    var optionsatt = {
+        title: {
+            display: true,
+            position: 'top',
+
+        },
+        responsive: true,
+        maintainAspectRatio: false,
+        label: { responsive: true, }
+    };
+
+
+    // Chart declaration:
+    var myBarChartatt = new Chart(ctxatt, {
+        type: 'pie',
+        data: dataatt,
+        options: optionsatt
+    });
+
+</script>
 
 </html>

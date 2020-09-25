@@ -184,9 +184,11 @@ button {
 .verticalFlex {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
 }
 .verticalFlexItem {
-  flex: 0 0 10% !important;
+  min-height: 30%;
+  flex: 0 0 1;
 }
 .verticalFlexItem2 {
   flex: 0 0 48% !important;
@@ -502,6 +504,15 @@ ul.breadcrumb li a:hover {
   border-radius: 0.25rem;
 }
 
+.chartStyle {
+  min-width: 100%;
+  min-height: 40vh;
+  transform: translateY(-10%);
+}
+#lastChart {
+  order: 3;
+}
+
 @media only screen and (max-device-width: 480px) {
   /* STYLES HERE for DEVICES with physical max-screen width of 480px */
   .columnatt {
@@ -510,6 +521,9 @@ ul.breadcrumb li a:hover {
 }
 
 @media only screen and (max-width: 600px) {
+  #lastChart {
+    order: 1;
+  }
   .progressDiv {
     margin: 0.5rem;
     width: 100%;
