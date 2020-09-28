@@ -35,12 +35,12 @@
         <h5>Teacher</h5>
         <a href="attendance_form.html"><button class=""><i class="fa fa-paperclip"></i>
                 Attendance Form</button></a>
-                <a href="teachers_marks.html"><button class=""><i class=" fa fa-line-chart"></i>
-                    Marks Analysis</button></a>
-                    <h5>Admin</h5>
-                    <a href="admin_confirm.html"><button class=""><i class="fa fa-paperclip"></i>
-                        Student Confirmation</button></a>
-            <!--
+        <a href="teachers_marks.html"><button class=""><i class=" fa fa-line-chart"></i>
+                Marks Analysis</button></a>
+        <h5>Admin</h5>
+        <a href="admin_confirm.html"><button class=""><i class="fa fa-paperclip"></i>
+                Student Confirmation</button></a>
+        <!--
             <button class=""><i class="fa fa-rocket"></i> Widget</button>
             <h5>UI Widgets</h5>
             <button class="dropdown-btn"><i class="fa fa-cube"></i>Basic<i class="fa fa-angle-down fa-lg"
@@ -71,7 +71,8 @@
                 <a href=""><button><i class="fa fa-angle-right"></i>Rectangle</button></a>
                 <a href=""><button><i class="fa fa-angle-right"></i>Circle</button></a>
     
-            </div>--><div>
+            </div>-->
+        <div>
 
             <a href="javascipt:void(0)" class="closebtn">
                 <i class="fa fa-angle-left" onclick="toggleF()"></i>
@@ -323,8 +324,8 @@
 
         </div>
         <h2 style="margin: 1% 2.5% 1% 2.5%;">Attendance Table</h2>
-        <div style="overflow-x:auto;">
-            <table id="attendanceTable">
+        <div class="AttendanceTableContainer">
+            <table class="attendanceTable">
                 <tr class="firstRowAttTable">
                     <th class="firstColAttTable">Date</th>
                     <th>8:00 - 9:00</th>
@@ -388,7 +389,7 @@
             </table>
         </div>
         <br><br>
-        <div style="overflow-x:auto;">
+        <div class="AttendanceTableContainer">
             <table id="attendanceTable2">
                 <tr class="firstRowAttTable">
                     <th class="firstColAttTable">Date</th>
