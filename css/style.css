@@ -730,6 +730,19 @@ td {
   border-radius: 5px;
   min-width: 160px;
 }
+.dropbtn2 {
+  background-color: #4099ff;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  min-width: 160px;
+  width: 40%;
+margin: 0 4%;
+}
+
 .dropinput {
   font-family: "Quicksand", sans-serif;
   /* background-color: #4099ff; */
@@ -867,4 +880,37 @@ td {
 
 .table_inside_row > div {
   margin: 1%;
+}
+
+
+.formInput {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 16px;
+  /* padding: 12px 15px 12px 15px; */
+  border: 1px solid #ddd;
+  /* margin-bottom: 12px; */
+  background-color: rgba(0, 0, 0, 0);
+  outline: none;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.formLabel {
+  padding: 0 5%;
+}
+
+#addTeacherTable {
+  width: 90%;
+  margin-left: 2%;
+}
+
+#addTeacherTable th,
+td {
+  text-align: left;
+  /* border-bottom: 1px solid #dee2e6; */
+  padding: 1% 0;
+  border: none;
+  
 }
